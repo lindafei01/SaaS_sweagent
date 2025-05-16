@@ -1,0 +1,9 @@
+2025-05-01 05:06:47,138 - 0392fc2da5e66b5f158ad7877075c1974f42b122c9b31982c634a872e5ef6362 - INFO - Created zip file: /var/folders/dh/0srwpbpx52bcppyz_l3ghybm0000gn/T/tmpt3z1ugnz/test with default content
+2025-05-01 05:06:47,145 - 0392fc2da5e66b5f158ad7877075c1974f42b122c9b31982c634a872e5ef6362 - INFO - Received 200 response for POST: --- file1.txt ---
+This is file1
+
+--- file2.txt ---
+This is file2
+
+
+2025-05-01 05:06:47,146 - 0392fc2da5e66b5f158ad7877075c1974f42b122c9b31982c634a872e5ef6362 - INFO - PDF contains the correct text.

@@ -1,0 +1,198 @@
+2025-05-01 05:13:23,067 - 2eb4d2f453e1e95ec8fbd6addb7e0053d9f072a57431feae5bbf1fe86d72e2bd - INFO - got response for GET /recommender/user1@example.com' OR '1'='1:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        <p>No products found matching your search criteria.</p>
+    
+</body>
+</html>
+2025-05-01 05:13:23,075 - 2eb4d2f453e1e95ec8fbd6addb7e0053d9f072a57431feae5bbf1fe86d72e2bd - INFO - got response for GET /recommender/1 OR '1'='1':
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        <p>No products found matching your search criteria.</p>
+    
+</body>
+</html>
+2025-05-01 05:13:23,081 - 2eb4d2f453e1e95ec8fbd6addb7e0053d9f072a57431feae5bbf1fe86d72e2bd - INFO - got response for GET /recommender/' UNION SELECT * FROM users --:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        <p>No products found matching your search criteria.</p>
+    
+</body>
+</html>
+2025-05-01 05:13:23,086 - 2eb4d2f453e1e95ec8fbd6addb7e0053d9f072a57431feae5bbf1fe86d72e2bd - INFO - got response for GET /recommender/aa' UNION SELECT * FROM users --:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        <p>No products found matching your search criteria.</p>
+    
+</body>
+</html>
+2025-05-01 05:13:23,091 - 2eb4d2f453e1e95ec8fbd6addb7e0053d9f072a57431feae5bbf1fe86d72e2bd - INFO - got response for GET /recommender/UNION SELECT * FROM users --:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        <p>No products found matching your search criteria.</p>
+    
+</body>
+</html>
+2025-05-01 05:13:23,097 - 2eb4d2f453e1e95ec8fbd6addb7e0053d9f072a57431feae5bbf1fe86d72e2bd - INFO - got response for GET /recommender/'; DROP TABLE users; --:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        <p>No products found matching your search criteria.</p>
+    
+</body>
+</html>

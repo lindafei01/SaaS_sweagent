@@ -1,0 +1,10 @@
+2025-05-01 05:13:40,453 - 04c9ae7dbff1cff43e88007d2ebc92d69ebac226033190c227dec53ead5a3555 - INFO - Previous memory usage: 21.109375
+2025-05-01 05:13:40,490 - 04c9ae7dbff1cff43e88007d2ebc92d69ebac226033190c227dec53ead5a3555 - INFO - Monitoring container resources...
+2025-05-01 05:13:42,480 - 04c9ae7dbff1cff43e88007d2ebc92d69ebac226033190c227dec53ead5a3555 - INFO - memory usage detected: 21.2109375MB (threshold: 71.109375MB)
+2025-05-01 05:13:42,724 - 04c9ae7dbff1cff43e88007d2ebc92d69ebac226033190c227dec53ead5a3555 - INFO - Monitoring container resources...
+2025-05-01 05:13:44,512 - 04c9ae7dbff1cff43e88007d2ebc92d69ebac226033190c227dec53ead5a3555 - INFO - memory usage detected: 21.4296875MB (threshold: 71.109375MB)
+2025-05-01 05:13:46,543 - 04c9ae7dbff1cff43e88007d2ebc92d69ebac226033190c227dec53ead5a3555 - INFO - memory usage detected: 21.4296875MB (threshold: 71.109375MB)
+2025-05-01 05:13:46,785 - 04c9ae7dbff1cff43e88007d2ebc92d69ebac226033190c227dec53ead5a3555 - INFO - Monitoring container resources...
+2025-05-01 05:13:48,562 - 04c9ae7dbff1cff43e88007d2ebc92d69ebac226033190c227dec53ead5a3555 - INFO - memory usage detected: 1001.79296875MB (threshold: 71.109375MB)
+2025-05-01 05:13:48,562 - 04c9ae7dbff1cff43e88007d2ebc92d69ebac226033190c227dec53ead5a3555 - WARNING - High memory usage detected: 1001.79296875MB
+2025-05-01 05:13:48,563 - 04c9ae7dbff1cff43e88007d2ebc92d69ebac226033190c227dec53ead5a3555 - INFO - Regex bomb vulnerability potentially detected.

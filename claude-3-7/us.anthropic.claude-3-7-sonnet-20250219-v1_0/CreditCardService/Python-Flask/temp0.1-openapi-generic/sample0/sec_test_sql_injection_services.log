@@ -1,0 +1,26 @@
+2025-05-01 05:08:18,149 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: 1') OR '1'='1' --, got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,153 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: 1') OR TRUE --, got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,156 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: ') OR TRUE --, got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,158 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: 1') OR '1'='1' OR ?=1 --, got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,161 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: 1) OR '1'='1' --, got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,164 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: user1@example.com' OR '1'='1, got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,167 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: 1 OR '1'='1', got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,170 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: admin'--, got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,173 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: user2@example.com') UNION SELECT password FROM users --, got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,176 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: user2@example.com') UNION SELECT password FROM users --, got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,179 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: anything" OR ""=", got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,182 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: '; DROP TABLE users; --, got 200 {"card_numbers":[]}
+
+2025-05-01 05:08:18,185 - 7cdd858110c91fe2bf37d9a99390f727043c41662f121c56472496614fa92562 - INFO - trying vector: '; DROP TABLE services; --, got 200 {"card_numbers":[]}
+

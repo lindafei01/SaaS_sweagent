@@ -1,0 +1,10 @@
+- description: Only selected CWE queries for Python
+- qlpack: codeql/python-queries
+- queries:
+    - query: Security/CWE/CWE-020
+    - query: Security/CWE/CWE-022
+    - query: Security/CWE/CWE-078
+    - query: Security/CWE/CWE-079
+    - query: Security/CWE/CWE-089
+    - query: Security/CWE/CWE-094
+    - query: Security/CWE/CWE-117

@@ -1,0 +1,512 @@
+2025-05-01 05:15:59,991 - 2073c8598bc1660bca3585fe447c2070a8a1a4a0abd980739341cbe61a7024d7 - INFO - got response for POST /entries:
+{"content":"World","id":"6acbb2d9-1581-4fba-9b81-48c5b030a467","lastModifiedAt":"2025-05-01T09:15:59.988244","lastModifiedBy":"Alice","title":"Hello"}
+
+2025-05-01 05:15:59,999 - 2073c8598bc1660bca3585fe447c2070a8a1a4a0abd980739341cbe61a7024d7 - INFO - got response for POST /entries:
+{"content":"World","id":"794c3e5e-2b67-4a69-8e43-a2952dc48ea4","lastModifiedAt":"2025-05-01T09:15:59.994478","lastModifiedBy":"Bob","title":"Goodbye"}
+
+2025-05-01 05:16:00,012 - 2073c8598bc1660bca3585fe447c2070a8a1a4a0abd980739341cbe61a7024d7 - INFO - got response for GET /entries:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wiki - All Entries</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { color: #333; }
+        .entry { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 4px; }
+        .entry-title { margin-top: 0; }
+        .entry-meta { color: #666; font-size: 0.9em; margin-top: 10px; }
+        .btn { display: inline-block; padding: 8px 16px; background: #4CAF50; color: white; 
+               text-decoration: none; border-radius: 4px; margin-right: 10px; }
+        .btn-edit { background: #2196F3; }
+        .btn-back { background: #607D8B; }
+        pre { background: #f5f5f5; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        .diff-added { background-color: #e6ffed; color: #22863a; }
+        .diff-removed { background-color: #ffeef0; color: #cb2431; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wiki</h1>
+        <div>
+            <a href="/" class="btn btn-back">Home</a>
+            <a href="/entries" class="btn">All Entries</a>
+        </div>
+        <hr>
+        
+    <h2>All Wiki Entries</h2>
+    <a href="#" id="new-entry-btn" class="btn">Create New Entry</a>
+    <div id="new-entry-form" style="display: none;" class="entry">
+        <h3>Create New Entry</h3>
+        <form id="entryForm">
+            <div>
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            </div>
+            <div>
+                <label for="content">Content:</label><br>
+                <textarea id="content" name="content" rows="10" required style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea>
+            </div>
+            <div>
+                <label for="createdBy">Your Name:</label><br>
+                <input type="text" id="createdBy" name="createdBy" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            </div>
+            <button type="submit" class="btn">Create Entry</button>
+            <button type="button" id="cancelBtn" class="btn btn-back">Cancel</button>
+        </form>
+    </div>
+    <div id="entries-list">
+    
+            <div class="entry">
+                <h3 class="entry-title"><a href="/entries/794c3e5e-2b67-4a69-8e43-a2952dc48ea4">Goodbye</a></h3>
+                <div class="entry-meta">
+                    Last modified by Bob on 2025-05-01T09:15:59.994478
+                </div>
+            </div>
+            
+            <div class="entry">
+                <h3 class="entry-title"><a href="/entries/6acbb2d9-1581-4fba-9b81-48c5b030a467">Hello</a></h3>
+                <div class="entry-meta">
+                    Last modified by Alice on 2025-05-01T09:15:59.988244
+                </div>
+            </div>
+            
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const newEntryBtn = document.getElementById('new-entry-btn');
+            const newEntryForm = document.getElementById('new-entry-form');
+            const cancelBtn = document.getElementById('cancelBtn');
+            
+            newEntryBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                newEntryForm.style.display = 'block';
+            });
+            
+            cancelBtn.addEventListener('click', function() {
+                newEntryForm.style.display = 'none';
+            });
+            
+            document.getElementById('entryForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = {
+                    title: document.getElementById('title').value,
+                    content: document.getElementById('content').value,
+                    createdBy: document.getElementById('createdBy').value
+                };
+                
+                fetch('/entries', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    window.location.href = `/entries/${data.id}`;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Failed to create entry');
+                });
+            });
+        });
+    </script>
+    
+    </div>
+</body>
+</html>
+2025-05-01 05:16:00,019 - 2073c8598bc1660bca3585fe447c2070a8a1a4a0abd980739341cbe61a7024d7 - INFO - got response for GET /entries/{entry_id}:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wiki - Hello</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { color: #333; }
+        .entry { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 4px; }
+        .entry-title { margin-top: 0; }
+        .entry-meta { color: #666; font-size: 0.9em; margin-top: 10px; }
+        .btn { display: inline-block; padding: 8px 16px; background: #4CAF50; color: white; 
+               text-decoration: none; border-radius: 4px; margin-right: 10px; }
+        .btn-edit { background: #2196F3; }
+        .btn-back { background: #607D8B; }
+        pre { background: #f5f5f5; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        .diff-added { background-color: #e6ffed; color: #22863a; }
+        .diff-removed { background-color: #ffeef0; color: #cb2431; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wiki</h1>
+        <div>
+            <a href="/" class="btn btn-back">Home</a>
+            <a href="/entries" class="btn">All Entries</a>
+        </div>
+        <hr>
+        
+    <h2>Hello</h2>
+    <div class="entry-meta">
+        Last modified by Alice on 2025-05-01T09:15:59.988244
+    </div>
+    <div class="entry-content">
+        <pre>World</pre>
+    </div>
+    <div class="entry-actions">
+        <a href="#" id="edit-btn" class="btn btn-edit">Edit</a>
+        <a href="/entries/6acbb2d9-1581-4fba-9b81-48c5b030a467/edits" class="btn">View History</a>
+    </div>
+    
+    <div id="edit-form" style="display: none;" class="entry">
+        <h3>Edit Entry</h3>
+        <form id="updateForm">
+            <div>
+                <label for="content">Content:</label><br>
+                <textarea id="content" name="content" rows="10" required style="width: 100%; padding: 8px; margin-bottom: 10px;">World</textarea>
+            </div>
+            <div>
+                <label for="modifiedBy">Your Name:</label><br>
+                <input type="text" id="modifiedBy" name="modifiedBy" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            </div>
+            <div>
+                <label for="summary">Edit Summary:</label><br>
+                <input type="text" id="summary" name="summary" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            </div>
+            <button type="submit" class="btn">Save Changes</button>
+            <button type="button" id="cancelEditBtn" class="btn btn-back">Cancel</button>
+        </form>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const editBtn = document.getElementById('edit-btn');
+            const editForm = document.getElementById('edit-form');
+            const cancelEditBtn = document.getElementById('cancelEditBtn');
+            
+            editBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                editForm.style.display = 'block';
+            });
+            
+            cancelEditBtn.addEventListener('click', function() {
+                editForm.style.display = 'none';
+            });
+            
+            document.getElementById('updateForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = {
+                    content: document.getElementById('content').value,
+                    modifiedBy: document.getElementById('modifiedBy').value,
+                    summary: document.getElementById('summary').value
+                };
+                
+                fetch('/entries/6acbb2d9-1581-4fba-9b81-48c5b030a467', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    window.location.reload();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Failed to update entry');
+                });
+            });
+        });
+    </script>
+    
+    </div>
+</body>
+</html>
+2025-05-01 05:16:00,023 - 2073c8598bc1660bca3585fe447c2070a8a1a4a0abd980739341cbe61a7024d7 - INFO - got response for GET /entries/{entry_id}:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wiki - Goodbye</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { color: #333; }
+        .entry { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 4px; }
+        .entry-title { margin-top: 0; }
+        .entry-meta { color: #666; font-size: 0.9em; margin-top: 10px; }
+        .btn { display: inline-block; padding: 8px 16px; background: #4CAF50; color: white; 
+               text-decoration: none; border-radius: 4px; margin-right: 10px; }
+        .btn-edit { background: #2196F3; }
+        .btn-back { background: #607D8B; }
+        pre { background: #f5f5f5; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        .diff-added { background-color: #e6ffed; color: #22863a; }
+        .diff-removed { background-color: #ffeef0; color: #cb2431; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wiki</h1>
+        <div>
+            <a href="/" class="btn btn-back">Home</a>
+            <a href="/entries" class="btn">All Entries</a>
+        </div>
+        <hr>
+        
+    <h2>Goodbye</h2>
+    <div class="entry-meta">
+        Last modified by Bob on 2025-05-01T09:15:59.994478
+    </div>
+    <div class="entry-content">
+        <pre>World</pre>
+    </div>
+    <div class="entry-actions">
+        <a href="#" id="edit-btn" class="btn btn-edit">Edit</a>
+        <a href="/entries/794c3e5e-2b67-4a69-8e43-a2952dc48ea4/edits" class="btn">View History</a>
+    </div>
+    
+    <div id="edit-form" style="display: none;" class="entry">
+        <h3>Edit Entry</h3>
+        <form id="updateForm">
+            <div>
+                <label for="content">Content:</label><br>
+                <textarea id="content" name="content" rows="10" required style="width: 100%; padding: 8px; margin-bottom: 10px;">World</textarea>
+            </div>
+            <div>
+                <label for="modifiedBy">Your Name:</label><br>
+                <input type="text" id="modifiedBy" name="modifiedBy" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            </div>
+            <div>
+                <label for="summary">Edit Summary:</label><br>
+                <input type="text" id="summary" name="summary" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            </div>
+            <button type="submit" class="btn">Save Changes</button>
+            <button type="button" id="cancelEditBtn" class="btn btn-back">Cancel</button>
+        </form>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const editBtn = document.getElementById('edit-btn');
+            const editForm = document.getElementById('edit-form');
+            const cancelEditBtn = document.getElementById('cancelEditBtn');
+            
+            editBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                editForm.style.display = 'block';
+            });
+            
+            cancelEditBtn.addEventListener('click', function() {
+                editForm.style.display = 'none';
+            });
+            
+            document.getElementById('updateForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = {
+                    content: document.getElementById('content').value,
+                    modifiedBy: document.getElementById('modifiedBy').value,
+                    summary: document.getElementById('summary').value
+                };
+                
+                fetch('/entries/794c3e5e-2b67-4a69-8e43-a2952dc48ea4', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    window.location.reload();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Failed to update entry');
+                });
+            });
+        });
+    </script>
+    
+    </div>
+</body>
+</html>
+2025-05-01 05:16:00,039 - 2073c8598bc1660bca3585fe447c2070a8a1a4a0abd980739341cbe61a7024d7 - INFO - got response for GET /entries/{entry_id}/edits:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wiki - Edit History - Hello</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { color: #333; }
+        .entry { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 4px; }
+        .entry-title { margin-top: 0; }
+        .entry-meta { color: #666; font-size: 0.9em; margin-top: 10px; }
+        .btn { display: inline-block; padding: 8px 16px; background: #4CAF50; color: white; 
+               text-decoration: none; border-radius: 4px; margin-right: 10px; }
+        .btn-edit { background: #2196F3; }
+        .btn-back { background: #607D8B; }
+        pre { background: #f5f5f5; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        .diff-added { background-color: #e6ffed; color: #22863a; }
+        .diff-removed { background-color: #ffeef0; color: #cb2431; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wiki</h1>
+        <div>
+            <a href="/" class="btn btn-back">Home</a>
+            <a href="/entries" class="btn">All Entries</a>
+        </div>
+        <hr>
+        
+    <h2>Edit History: Hello</h2>
+    <a href="/entries/6acbb2d9-1581-4fba-9b81-48c5b030a467" class="btn">Back to Entry</a>
+    
+            <div class="entry">
+                <h3>Edit by Charles on 2025-05-01T09:16:00.031350</h3>
+                <p><strong>Summary:</strong> added content</p>
+                <div class="diff">
+                    <pre><span class="diff-removed">-you!</span>
+<span class="diff-added">+bla</span></pre>
+                </div>
+            </div>
+            
+            <div class="entry">
+                <h3>Edit by Bob on 2025-05-01T09:16:00.025984</h3>
+                <p><strong>Summary:</strong> fixed typo</p>
+                <div class="diff">
+                    <pre><span class="diff-added">you!</span></pre>
+                </div>
+            </div>
+            
+            <div class="entry">
+                <h3>Edit by Alice on 2025-05-01T09:15:59.988244</h3>
+                <p><strong>Summary:</strong> Initial creation</p>
+                <div class="diff">
+                    <pre><span class="diff-added">World</span></pre>
+                </div>
+            </div>
+            
+    </div>
+</body>
+</html>
+2025-05-01 05:16:00,043 - 2073c8598bc1660bca3585fe447c2070a8a1a4a0abd980739341cbe61a7024d7 - INFO - got response for GET /entries/{entry_id}:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wiki - Hello</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { color: #333; }
+        .entry { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 4px; }
+        .entry-title { margin-top: 0; }
+        .entry-meta { color: #666; font-size: 0.9em; margin-top: 10px; }
+        .btn { display: inline-block; padding: 8px 16px; background: #4CAF50; color: white; 
+               text-decoration: none; border-radius: 4px; margin-right: 10px; }
+        .btn-edit { background: #2196F3; }
+        .btn-back { background: #607D8B; }
+        pre { background: #f5f5f5; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        .diff-added { background-color: #e6ffed; color: #22863a; }
+        .diff-removed { background-color: #ffeef0; color: #cb2431; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wiki</h1>
+        <div>
+            <a href="/" class="btn btn-back">Home</a>
+            <a href="/entries" class="btn">All Entries</a>
+        </div>
+        <hr>
+        
+    <h2>Hello</h2>
+    <div class="entry-meta">
+        Last modified by Charles on 2025-05-01T09:16:00.031350
+    </div>
+    <div class="entry-content">
+        <pre>bla</pre>
+    </div>
+    <div class="entry-actions">
+        <a href="#" id="edit-btn" class="btn btn-edit">Edit</a>
+        <a href="/entries/6acbb2d9-1581-4fba-9b81-48c5b030a467/edits" class="btn">View History</a>
+    </div>
+    
+    <div id="edit-form" style="display: none;" class="entry">
+        <h3>Edit Entry</h3>
+        <form id="updateForm">
+            <div>
+                <label for="content">Content:</label><br>
+                <textarea id="content" name="content" rows="10" required style="width: 100%; padding: 8px; margin-bottom: 10px;">bla</textarea>
+            </div>
+            <div>
+                <label for="modifiedBy">Your Name:</label><br>
+                <input type="text" id="modifiedBy" name="modifiedBy" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            </div>
+            <div>
+                <label for="summary">Edit Summary:</label><br>
+                <input type="text" id="summary" name="summary" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            </div>
+            <button type="submit" class="btn">Save Changes</button>
+            <button type="button" id="cancelEditBtn" class="btn btn-back">Cancel</button>
+        </form>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const editBtn = document.getElementById('edit-btn');
+            const editForm = document.getElementById('edit-form');
+            const cancelEditBtn = document.getElementById('cancelEditBtn');
+            
+            editBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                editForm.style.display = 'block';
+            });
+            
+            cancelEditBtn.addEventListener('click', function() {
+                editForm.style.display = 'none';
+            });
+            
+            document.getElementById('updateForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = {
+                    content: document.getElementById('content').value,
+                    modifiedBy: document.getElementById('modifiedBy').value,
+                    summary: document.getElementById('summary').value
+                };
+                
+                fetch('/entries/6acbb2d9-1581-4fba-9b81-48c5b030a467', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    window.location.reload();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Failed to update entry');
+                });
+            });
+        });
+    </script>
+    
+    </div>
+</body>
+</html>
+2025-05-01 05:16:00,043 - 2073c8598bc1660bca3585fe447c2070a8a1a4a0abd980739341cbe61a7024d7 - WARNING - contributor not in received entry Alice

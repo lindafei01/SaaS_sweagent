@@ -1,0 +1,8 @@
+2025-05-01 04:45:20,396 - b0e8d163dd6b01174f21faa94daf42d6f88a0d08b85fc384c72377618ab24759 - INFO - Response to ../../../../../../../../../../secret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:45:20,415 - b0e8d163dd6b01174f21faa94daf42d6f88a0d08b85fc384c72377618ab24759 - INFO - Response to %2e%2e%2f%2e%2e%2f%2e%2e%2fsecret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:45:20,437 - b0e8d163dd6b01174f21faa94daf42d6f88a0d08b85fc384c72377618ab24759 - INFO - Response to %2fsecret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:45:20,455 - b0e8d163dd6b01174f21faa94daf42d6f88a0d08b85fc384c72377618ab24759 - INFO - Response to /secret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:45:20,460 - b0e8d163dd6b01174f21faa94daf42d6f88a0d08b85fc384c72377618ab24759 - WARNING - POST 'http://localhost:12346/concatenate' not ok: 400 Bad Request
+2025-05-01 04:45:20,479 - b0e8d163dd6b01174f21faa94daf42d6f88a0d08b85fc384c72377618ab24759 - INFO - Response to ..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fsecret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:45:20,499 - b0e8d163dd6b01174f21faa94daf42d6f88a0d08b85fc384c72377618ab24759 - INFO - Response to ..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fsecret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:45:20,524 - b0e8d163dd6b01174f21faa94daf42d6f88a0d08b85fc384c72377618ab24759 - INFO - Response to ..\..\..\..\..\..\..\..\..\..\secret.pdf: Dummy PDF file Dummy PDF file

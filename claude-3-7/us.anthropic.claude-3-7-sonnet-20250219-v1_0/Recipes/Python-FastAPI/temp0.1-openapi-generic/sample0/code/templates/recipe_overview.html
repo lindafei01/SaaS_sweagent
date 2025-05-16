@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Overview</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        h1 { color: #333; }
+        .recipe-list { list-style: none; padding: 0; }
+        .recipe-item { margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        .recipe-title { font-weight: bold; }
+        .recipe-rating { color: #f90; }
+    </style>
+</head>
+<body>
+    <h1>Recipe Overview</h1>
+    
+    <h2>Recent Recipes</h2>
+    <ul class="recipe-list">
+        {% for recipe in recent_recipes %}
+        <li class="recipe-item">
+            <div class="recipe-title"><a href="/recipes/{{ recipe.id }}">{{ recipe.title }}</a></div>
+            {% if recipe.avgRating %}
+            <div class="recipe-rating">Rating: {{ recipe.avgRating }}/5</div>
+            {% else %}
+            <div class="recipe-rating">No ratings yet</div>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Top Rated Recipes</h2>
+    <ul class="recipe-list">
+        {% for recipe in top_recipes %}
+        <li class="recipe-item">
+            <div class="recipe-title"><a href="/recipes/{{ recipe.id }}">{{ recipe.title }}</a></div>
+            <div class="recipe-rating">Rating: {{ recipe.avgRating }}/5</div>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

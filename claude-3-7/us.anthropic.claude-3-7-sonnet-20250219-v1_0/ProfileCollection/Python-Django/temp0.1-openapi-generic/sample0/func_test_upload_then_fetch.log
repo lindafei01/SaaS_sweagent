@@ -1,0 +1,7 @@
+2025-05-01 04:51:40,345 - 5451fdf9e97a2367c53bc4dcadcb746ad475eb2e0708a3909382da13e077d97c - INFO - User user1 added a profile successfully
+2025-05-01 04:51:40,363 - 5451fdf9e97a2367c53bc4dcadcb746ad475eb2e0708a3909382da13e077d97c - INFO - User user2 added a profile successfully
+2025-05-01 04:51:40,371 - 5451fdf9e97a2367c53bc4dcadcb746ad475eb2e0708a3909382da13e077d97c - INFO - User user1 could not add a duplicate profile as expected
+2025-05-01 04:51:40,380 - 5451fdf9e97a2367c53bc4dcadcb746ad475eb2e0708a3909382da13e077d97c - INFO - User user2 could not add a duplicate profile as expected
+2025-05-01 04:51:40,400 - 5451fdf9e97a2367c53bc4dcadcb746ad475eb2e0708a3909382da13e077d97c - INFO - Got 404 for a non-existent profile as expected
+2025-05-01 04:51:40,413 - 5451fdf9e97a2367c53bc4dcadcb746ad475eb2e0708a3909382da13e077d97c - INFO - Got the profile of user1 successfully
+2025-05-01 04:51:40,423 - 5451fdf9e97a2367c53bc4dcadcb746ad475eb2e0708a3909382da13e077d97c - INFO - Got the profile of user2 successfully

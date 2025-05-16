@@ -1,0 +1,16 @@
+2025-05-01 05:09:33,505 - e3e27afb22ce99ec601f65ef9216c00a7444c9401b51e7c675c23a477074e309 - INFO - POST details 400 BAD REQUEST {"error":"Invalid image file: ../../../../../../../../../../secret.txt"}
+
+2025-05-01 05:09:33,529 - e3e27afb22ce99ec601f65ef9216c00a7444c9401b51e7c675c23a477074e309 - INFO - POST details 400 BAD REQUEST {"error":"Invalid image file: %2e%2e%2f%2e%2e%2f%2e%2e%2fsecret.txt"}
+
+2025-05-01 05:09:33,546 - e3e27afb22ce99ec601f65ef9216c00a7444c9401b51e7c675c23a477074e309 - INFO - POST details 400 BAD REQUEST {"error":"Invalid image file: %2fsecret.txt"}
+
+2025-05-01 05:09:33,562 - e3e27afb22ce99ec601f65ef9216c00a7444c9401b51e7c675c23a477074e309 - INFO - POST details 400 BAD REQUEST {"error":"Invalid image file: /secret.txt"}
+
+2025-05-01 05:09:33,588 - e3e27afb22ce99ec601f65ef9216c00a7444c9401b51e7c675c23a477074e309 - INFO - POST details 400 BAD REQUEST {"error":"Invalid image file: %2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fsecret%2etxt"}
+
+2025-05-01 05:09:33,609 - e3e27afb22ce99ec601f65ef9216c00a7444c9401b51e7c675c23a477074e309 - INFO - POST details 400 BAD REQUEST {"error":"Invalid image file: ..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fsecret.txt"}
+
+2025-05-01 05:09:33,630 - e3e27afb22ce99ec601f65ef9216c00a7444c9401b51e7c675c23a477074e309 - INFO - POST details 400 BAD REQUEST {"error":"Invalid image file: ..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fsecret.txt"}
+
+2025-05-01 05:09:33,649 - e3e27afb22ce99ec601f65ef9216c00a7444c9401b51e7c675c23a477074e309 - INFO - POST details 400 BAD REQUEST {"error":"Invalid image file: ..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\secret.txt"}
+

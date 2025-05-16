@@ -1,0 +1,56 @@
+2025-05-01 05:13:34,979 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '../../../../../../../../../../'}
+2025-05-01 05:13:34,984 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Invalid directory path"}
+
+2025-05-01 05:13:34,984 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:34,984 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '../../../../../../../../../..'}
+2025-05-01 05:13:34,987 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Invalid directory path"}
+
+2025-05-01 05:13:34,987 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:34,987 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '%2e%2e%2f%2e%2e%2f%2e%2e%2f'}
+2025-05-01 05:13:34,992 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Directory not found: %2e%2e%2f%2e%2e%2f%2e%2e%2f"}
+
+2025-05-01 05:13:34,992 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:34,992 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '%2e%2e%2f%2e%2e%2f%2e%2e'}
+2025-05-01 05:13:34,995 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Directory not found: %2e%2e%2f%2e%2e%2f%2e%2e"}
+
+2025-05-01 05:13:34,995 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:34,995 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '%2f'}
+2025-05-01 05:13:34,998 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Directory not found: %2f"}
+
+2025-05-01 05:13:34,998 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:34,999 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '/'}
+2025-05-01 05:13:35,002 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Invalid directory path"}
+
+2025-05-01 05:13:35,002 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:35,002 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f'}
+2025-05-01 05:13:35,005 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Directory not found: %2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f"}
+
+2025-05-01 05:13:35,005 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:35,005 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e'}
+2025-05-01 05:13:35,008 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Directory not found: %2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e"}
+
+2025-05-01 05:13:35,008 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:35,008 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F'}
+2025-05-01 05:13:35,010 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Directory not found: ..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F"}
+
+2025-05-01 05:13:35,010 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:35,010 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..'}
+2025-05-01 05:13:35,013 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Directory not found: ..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F.."}
+
+2025-05-01 05:13:35,013 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:35,014 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F'}
+2025-05-01 05:13:35,017 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Directory not found: ..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F"}
+
+2025-05-01 05:13:35,017 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:35,017 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..'}
+2025-05-01 05:13:35,019 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Directory not found: ..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F.."}
+
+2025-05-01 05:13:35,019 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:35,019 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '..\\..\\..\\..\\..\\..\\..\\..\\..\\..'}
+2025-05-01 05:13:35,022 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Directory not found: ..\\..\\..\\..\\..\\..\\..\\..\\..\\.."}
+
+2025-05-01 05:13:35,022 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST
+2025-05-01 05:13:35,023 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '*.SECRET.*', 'directory': '..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\'}
+2025-05-01 05:13:35,026 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - INFO - Received response: {"error":"Directory not found: ..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\"}
+
+2025-05-01 05:13:35,026 - c3ec9f9b632bb74806a5b46de4fa63d25eccc516c34b023b7fc28a47f2aef65c - WARNING - GET 'http://localhost:12347/search' not ok: 400 BAD REQUEST

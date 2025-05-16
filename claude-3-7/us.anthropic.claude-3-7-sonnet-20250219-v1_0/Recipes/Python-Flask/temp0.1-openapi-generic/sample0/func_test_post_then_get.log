@@ -1,0 +1,4 @@
+2025-05-01 05:12:56,196 - be68dc536670f6f72f5e34c20383b33cb9ac1bcfd3a99cc2caef1f7249645861 - INFO - GET /recipes/Spaghetti Carbonara: 200 OK
+2025-05-01 05:12:56,201 - be68dc536670f6f72f5e34c20383b33cb9ac1bcfd3a99cc2caef1f7249645861 - INFO - GET /recipes/Chocolate Cake: 200 OK
+2025-05-01 05:12:56,204 - be68dc536670f6f72f5e34c20383b33cb9ac1bcfd3a99cc2caef1f7249645861 - INFO - GET /recipes/Chicken Curry: 200 OK
+2025-05-01 05:12:56,208 - be68dc536670f6f72f5e34c20383b33cb9ac1bcfd3a99cc2caef1f7249645861 - INFO - GET /recipes/Beef Stew: 200 OK

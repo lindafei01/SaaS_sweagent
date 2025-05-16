@@ -1,0 +1,791 @@
+2025-05-01 05:13:15,517 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - got response for GET /recommender:
+ tags ['tag1'], 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product1</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag2</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product3</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>
+2025-05-01 05:13:15,517 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product1</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag2</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product3</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>
+2025-05-01 05:13:15,523 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - got response for GET /recommender:
+ tags ['tag2'], 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product1</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag2</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product2</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag2</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>
+2025-05-01 05:13:15,523 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product1</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag2</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product2</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag2</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>
+2025-05-01 05:13:15,528 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - got response for GET /recommender:
+ tags ['tag3'], 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product2</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag2</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product3</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>
+2025-05-01 05:13:15,528 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product2</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag2</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product3</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>
+2025-05-01 05:13:15,533 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - got response for GET /recommender:
+ tags ['tag1', 'tag2'], 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product1</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag2</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product2</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag2</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product3</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>
+2025-05-01 05:13:15,533 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product1</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag2</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product2</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag2</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product3</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>
+2025-05-01 05:13:15,538 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - got response for GET /recommender:
+ tags ['tag1', 'tag3'], 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product1</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag2</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product2</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag2</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product3</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>
+2025-05-01 05:13:15,538 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product1</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag2</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product2</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag2</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product3</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>
+2025-05-01 05:13:15,543 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - got response for GET /recommender:
+ tags ['tag4'], 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        <p>No products found matching your search criteria.</p>
+    
+</body>
+</html>
+2025-05-01 05:13:15,543 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        <p>No products found matching your search criteria.</p>
+    
+</body>
+</html>
+2025-05-01 05:13:15,549 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - got response for GET /recommender:
+ tags ['tag4', 'tag1'], 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product1</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag2</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product3</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>
+2025-05-01 05:13:15,550 - 93132004125bf16e103f06528044979643b43a12ddaa57bf90a89c5f4cf144a6 - INFO - 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+        
+            <div class="product">
+                <h2>product1</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag2</span>
+                    
+                </div>
+            </div>
+        
+            <div class="product">
+                <h2>product3</h2>
+                <div>
+                    <strong>Tags:</strong>
+                    
+                        <span class="tag">tag1</span>
+                    
+                        <span class="tag">tag3</span>
+                    
+                </div>
+            </div>
+        
+    
+</body>
+</html>

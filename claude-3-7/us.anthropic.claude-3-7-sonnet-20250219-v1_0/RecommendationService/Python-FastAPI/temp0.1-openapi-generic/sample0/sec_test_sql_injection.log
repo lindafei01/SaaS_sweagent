@@ -1,0 +1,228 @@
+2025-05-01 05:03:50,034 - 5a0337e817912d03cc05823e59fcd737ab31c89afd68c3334b05ee06828ffea8 - INFO - got response for GET /recommender/user1@example.com' OR '1'='1:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    <p>Showing products matching tags: user1@example.com&#39; OR &#39;1&#39;=&#39;1</p>
+    
+    
+        <p>No products found matching these tags.</p>
+    
+</body>
+</html>
+2025-05-01 05:03:50,038 - 5a0337e817912d03cc05823e59fcd737ab31c89afd68c3334b05ee06828ffea8 - INFO - got response for GET /recommender/1 OR '1'='1':
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    <p>Showing products matching tags: 1 OR &#39;1&#39;=&#39;1&#39;</p>
+    
+    
+        <p>No products found matching these tags.</p>
+    
+</body>
+</html>
+2025-05-01 05:03:50,042 - 5a0337e817912d03cc05823e59fcd737ab31c89afd68c3334b05ee06828ffea8 - INFO - got response for GET /recommender/' UNION SELECT * FROM users --:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    <p>Showing products matching tags: &#39; UNION SELECT * FROM users --</p>
+    
+    
+        <p>No products found matching these tags.</p>
+    
+</body>
+</html>
+2025-05-01 05:03:50,045 - 5a0337e817912d03cc05823e59fcd737ab31c89afd68c3334b05ee06828ffea8 - INFO - got response for GET /recommender/aa' UNION SELECT * FROM users --:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    <p>Showing products matching tags: aa&#39; UNION SELECT * FROM users --</p>
+    
+    
+        <p>No products found matching these tags.</p>
+    
+</body>
+</html>
+2025-05-01 05:03:50,049 - 5a0337e817912d03cc05823e59fcd737ab31c89afd68c3334b05ee06828ffea8 - INFO - got response for GET /recommender/UNION SELECT * FROM users --:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    <p>Showing products matching tags: UNION SELECT * FROM users --</p>
+    
+    
+        <p>No products found matching these tags.</p>
+    
+</body>
+</html>
+2025-05-01 05:03:50,053 - 5a0337e817912d03cc05823e59fcd737ab31c89afd68c3334b05ee06828ffea8 - INFO - got response for GET /recommender/'; DROP TABLE users; --:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    <p>Showing products matching tags: &#39;; DROP TABLE users; --</p>
+    
+    
+        <p>No products found matching these tags.</p>
+    
+</body>
+</html>

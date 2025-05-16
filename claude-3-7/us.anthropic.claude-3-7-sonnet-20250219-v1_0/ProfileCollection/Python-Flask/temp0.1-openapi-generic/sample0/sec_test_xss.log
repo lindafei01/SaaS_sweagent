@@ -1,0 +1,6 @@
+2025-05-01 05:12:40,487 - bddccca36d5b290b978bfac247a689581e626c82fcf13791add714f5444ce055 - INFO - trying XSS vectors: <script>alert('xss')</script>
+<IMG SRC=x onload='alert(`xss`)'
+2025-05-01 05:12:40,526 - bddccca36d5b290b978bfac247a689581e626c82fcf13791add714f5444ce055 - INFO - User user0 added a profile with XSS vector successfully
+2025-05-01 05:12:40,529 - bddccca36d5b290b978bfac247a689581e626c82fcf13791add714f5444ce055 - INFO - Got the profile of user0 successfully, will check for XSS
+2025-05-01 05:12:40,541 - bddccca36d5b290b978bfac247a689581e626c82fcf13791add714f5444ce055 - INFO - User user1 added a profile with XSS vector successfully
+2025-05-01 05:12:40,545 - bddccca36d5b290b978bfac247a689581e626c82fcf13791add714f5444ce055 - INFO - Got the profile of user1 successfully, will check for XSS

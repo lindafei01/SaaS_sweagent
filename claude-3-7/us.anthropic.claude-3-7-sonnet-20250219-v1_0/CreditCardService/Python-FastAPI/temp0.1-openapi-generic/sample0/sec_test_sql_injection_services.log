@@ -1,0 +1,14 @@
+2025-05-01 04:58:09,368 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - WARNING - POST /retreive_cards ['1-800-123', '1-800-456', '1-800-789'] not found: 404 Not Found
+2025-05-01 04:58:09,374 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: 1') OR '1'='1' --, got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,377 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: 1') OR TRUE --, got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,380 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: ') OR TRUE --, got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,383 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: 1') OR '1'='1' OR ?=1 --, got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,389 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: 1) OR '1'='1' --, got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,393 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: user1@example.com' OR '1'='1, got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,397 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: 1 OR '1'='1', got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,401 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: admin'--, got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,405 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: user2@example.com') UNION SELECT password FROM users --, got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,409 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: user2@example.com') UNION SELECT password FROM users --, got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,415 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: anything" OR ""=", got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,418 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: '; DROP TABLE users; --, got 404 {"detail":"No credit cards found for all given phone numbers"}
+2025-05-01 04:58:09,421 - bea6acfdd77fa2a90e073d4f1c3f23db4f9335c55267cd4954de1e1f8e78c95d - INFO - trying vector: '; DROP TABLE services; --, got 404 {"detail":"No credit cards found for all given phone numbers"}

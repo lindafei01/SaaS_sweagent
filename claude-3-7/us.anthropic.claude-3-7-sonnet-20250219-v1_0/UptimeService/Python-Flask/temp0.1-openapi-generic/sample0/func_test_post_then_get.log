@@ -1,0 +1,15 @@
+2025-05-01 05:15:17,258 - 62428e5f79b09674e4c69d0f8a555d6dee4ffd3edcad972827da3796848fb212 - INFO - got response for GET /messages with token pass1:
+[{"lastNotification":"2025-05-01T09:15:17.225122","serviceId":"my-service"}]
+
+2025-05-01 05:15:17,262 - 62428e5f79b09674e4c69d0f8a555d6dee4ffd3edcad972827da3796848fb212 - INFO - got response for GET /messages with token pass2:
+[{"lastNotification":"2025-05-01T09:15:17.233144","serviceId":"my-service2"}]
+
+2025-05-01 05:15:17,265 - 62428e5f79b09674e4c69d0f8a555d6dee4ffd3edcad972827da3796848fb212 - INFO - got response for GET /messages with token invalid:
+[]
+
+2025-05-01 05:15:17,271 - 62428e5f79b09674e4c69d0f8a555d6dee4ffd3edcad972827da3796848fb212 - INFO - got response for GET /messages with token pass3:
+[{"lastNotification":"2025-05-01T09:15:17.239506","serviceId":"my-service"}]
+
+2025-05-01 05:15:17,274 - 62428e5f79b09674e4c69d0f8a555d6dee4ffd3edcad972827da3796848fb212 - INFO - got response for GET /messages with token pass4:
+[{"lastNotification":"2025-05-01T09:15:17.244513","serviceId":"my-service4"},{"lastNotification":"2025-05-01T09:15:17.250189","serviceId":"my-service5"}]
+

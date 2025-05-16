@@ -1,0 +1,3 @@
+2025-05-01 04:52:15,775 - 28ebf5ecdff5eab46b8fcb6bbc3985f7424d54fa41bcf3562498c6c1787baea4 - WARNING - POST rating not ok: 400 Bad Request
+2025-05-01 04:52:15,784 - 28ebf5ecdff5eab46b8fcb6bbc3985f7424d54fa41bcf3562498c6c1787baea4 - INFO - GET /recipes/Spaghetti Carbonara: 200 OK
+2025-05-01 04:52:15,784 - 28ebf5ecdff5eab46b8fcb6bbc3985f7424d54fa41bcf3562498c6c1787baea4 - WARNING - Zero or negative rating found in recipe

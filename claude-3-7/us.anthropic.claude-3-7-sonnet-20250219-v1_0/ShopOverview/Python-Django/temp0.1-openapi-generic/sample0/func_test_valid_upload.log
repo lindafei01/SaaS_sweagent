@@ -1,0 +1,11 @@
+2025-05-01 04:53:52,157 - eccf1452af7c28241241550abc25034cd57c89045e3dae7b90a95d2f995dbb0d - INFO - User registration succeeded for merchant1@example.com
+2025-05-01 04:53:52,409 - eccf1452af7c28241241550abc25034cd57c89045e3dae7b90a95d2f995dbb0d - INFO - User registration succeeded for merchant2@example.com
+2025-05-01 04:53:52,654 - eccf1452af7c28241241550abc25034cd57c89045e3dae7b90a95d2f995dbb0d - INFO - tried login for user: merchant1@example.com, got status=200 cookies=<RequestsCookieJar[<Cookie AUTH_COOKIE=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXJjaGFudF9pZCI6MSwiZXhwIjoxNzQ2MTc2MDMyfQ.UKva5wJF7RHX5NT2Z3g_h1aZ96l_0oMd1OvmELQYgn0 for localhost.local/>]>
+2025-05-01 04:53:52,899 - eccf1452af7c28241241550abc25034cd57c89045e3dae7b90a95d2f995dbb0d - INFO - tried login for user: merchant2@example.com, got status=200 cookies=<RequestsCookieJar[<Cookie AUTH_COOKIE=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXJjaGFudF9pZCI6MiwiZXhwIjoxNzQ2MTc2MDMyfQ.T9ULLETNPW_cWTjRNdddgC3EBiWnFwCje0uXKkR3v54 for localhost.local/>]>
+2025-05-01 04:53:52,904 - eccf1452af7c28241241550abc25034cd57c89045e3dae7b90a95d2f995dbb0d - INFO - got response for uploading wares=
+"Apple","A fruit",1.0
+"Banana","A yellow fruit",0.5
+"Carrot","A vegetable",0.25
+
+ status_code=401 text={"error": "Unauthorized"}
+2025-05-01 04:53:52,904 - eccf1452af7c28241241550abc25034cd57c89045e3dae7b90a95d2f995dbb0d - WARNING - failed uploading wares for merchant: merchant1@example.com status_code=401

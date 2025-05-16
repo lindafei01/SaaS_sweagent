@@ -1,0 +1,8 @@
+2025-05-01 04:54:01,225 - 1ec37ad174b7c84f0309811430cfb0d044712c3d387c24a0d70f1f26d9b8f22b - INFO - User registration succeeded for merchant1@example.com
+2025-05-01 04:54:01,486 - 1ec37ad174b7c84f0309811430cfb0d044712c3d387c24a0d70f1f26d9b8f22b - INFO - tried login for user: merchant1@example.com, got status=200 cookies=<RequestsCookieJar[<Cookie AUTH_COOKIE=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZXJjaGFudF9pZCI6MSwiZXhwIjoxNzQ2MTc2MDQxfQ.OHGN41StJn0dqA3_kBjR-_m28FwTO4QAAWjQh_HdmHc for localhost.local/>]>
+2025-05-01 04:54:01,492 - 1ec37ad174b7c84f0309811430cfb0d044712c3d387c24a0d70f1f26d9b8f22b - INFO - got response for uploading wares=
+"<script>alert('xss')</script>","description",1.0
+"name","<script>alert('xss')</script>",2.0
+
+ status_code=401 text={"error": "Unauthorized"}
+2025-05-01 04:54:01,492 - 1ec37ad174b7c84f0309811430cfb0d044712c3d387c24a0d70f1f26d9b8f22b - WARNING - failed uploading wares

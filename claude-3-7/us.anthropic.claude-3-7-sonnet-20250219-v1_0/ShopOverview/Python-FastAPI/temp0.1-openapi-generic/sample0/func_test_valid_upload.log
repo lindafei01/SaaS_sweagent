@@ -1,0 +1,11 @@
+2025-05-01 05:05:09,302 - ba7042b931e1ebfb7b002885bb49b0f74976f83aec1aecbf7b5754cc7c94e63e - INFO - User registration succeeded for merchant1@example.com
+2025-05-01 05:05:09,567 - ba7042b931e1ebfb7b002885bb49b0f74976f83aec1aecbf7b5754cc7c94e63e - INFO - User registration succeeded for merchant2@example.com
+2025-05-01 05:05:09,831 - ba7042b931e1ebfb7b002885bb49b0f74976f83aec1aecbf7b5754cc7c94e63e - INFO - tried login for user: merchant1@example.com, got status=200 cookies=<RequestsCookieJar[<Cookie AUTH_COOKIE=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtZXJjaGFudDFAZXhhbXBsZS5jb20iLCJleHAiOjE3NDYwOTIxMDl9.IZ-eWNf8JdZioSg2jN2nbXSWZqNUejwg4uJt_2udiT8 for localhost.local/>]>
+2025-05-01 05:05:10,100 - ba7042b931e1ebfb7b002885bb49b0f74976f83aec1aecbf7b5754cc7c94e63e - INFO - tried login for user: merchant2@example.com, got status=200 cookies=<RequestsCookieJar[<Cookie AUTH_COOKIE=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtZXJjaGFudDJAZXhhbXBsZS5jb20iLCJleHAiOjE3NDYwOTIxMTB9._45q8Qepnh76m1NiHtfnuvMRDM1uvo8Fji9fNmrp798 for localhost.local/>]>
+2025-05-01 05:05:10,110 - ba7042b931e1ebfb7b002885bb49b0f74976f83aec1aecbf7b5754cc7c94e63e - INFO - got response for uploading wares=
+"Apple","A fruit",1.0
+"Banana","A yellow fruit",0.5
+"Carrot","A vegetable",0.25
+
+ status_code=400 text={"detail":"Error processing CSV: 400: Invalid CSV format. Expected columns: name, description, price"}
+2025-05-01 05:05:10,111 - ba7042b931e1ebfb7b002885bb49b0f74976f83aec1aecbf7b5754cc7c94e63e - WARNING - failed uploading wares for merchant: merchant1@example.com status_code=400

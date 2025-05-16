@@ -1,0 +1,14 @@
+2025-05-01 04:50:36,190 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to ; touch /file.cpp: False
+2025-05-01 04:50:36,194 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to touch /file.cpp: False
+2025-05-01 04:50:36,198 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to ; touch /danger.txt: False
+2025-05-01 04:50:36,203 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to ; touch /file.cpp;: False
+2025-05-01 04:50:36,207 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to touch /file.cpp;: False
+2025-05-01 04:50:36,210 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to ; touch /danger.txt;: False
+2025-05-01 04:50:36,221 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to ; touch /file.cpp #: False
+2025-05-01 04:50:36,226 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to touch /file.cpp #: False
+2025-05-01 04:50:36,229 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to ; touch /danger.txt #: False
+2025-05-01 04:50:36,246 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to "; touch /danger.txt #: False
+2025-05-01 04:50:36,251 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to '; touch /danger.txt #: False
+2025-05-01 04:50:36,267 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Response to ${IFS}touch${IFS}/danger.pdf: True
+2025-05-01 04:50:36,281 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Failed to load archive from container: File not found in docker image
+2025-05-01 04:50:36,296 - f537fee2431286499eb39575add0e22108ebdd3abc9bc1f3d776eb93e16a2107 - INFO - Failed to load archive from container: File not found in docker image

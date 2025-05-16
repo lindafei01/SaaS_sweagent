@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Sharing App - Recipes Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .recipe-list {
+            margin-bottom: 30px;
+        }
+        .recipe-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .recipe-item a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .rating {
+            color: #f39c12;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recipe Sharing App</h1>
+    
+    <div class="recipe-list">
+        <h2>Recent Recipes</h2>
+        {% if recent_recipes %}
+            {% for recipe in recent_recipes %}
+                <div class="recipe-item">
+                    <a href="/recipes/{{ recipe.id }}">{{ recipe.title }}</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No recipes available yet.</p>
+        {% endif %}
+    </div>
+    
+    <div class="recipe-list">
+        <h2>Top Rated Recipes</h2>
+        {% if top_recipes %}
+            {% for recipe in top_recipes %}
+                <div class="recipe-item">
+                    <a href="/recipes/{{ recipe.id }}">{{ recipe.title }}</a>
+                    {% if recipe.avg_rating %}
+                        <span class="rating">★ {{ recipe.avg_rating|floatformat:1 }}</span>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No rated recipes available yet.</p>
+        {% endif %}
+    </div>
+    
+    <div>
+        <h2>Upload a New Recipe</h2>
+        <p>Use the API endpoint <code>/recipes/upload</code> to upload a new recipe.</p>
+    </div>
+</body>
+</html>

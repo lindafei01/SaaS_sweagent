@@ -1,0 +1,258 @@
+2025-05-01 05:14:25,934 - 21f1390f9444e61651414c11d0d3f3712f206c702330569d41b22e9d6654ad08 - INFO - User registration succeeded for merchant1@example.com
+2025-05-01 05:14:25,953 - 21f1390f9444e61651414c11d0d3f3712f206c702330569d41b22e9d6654ad08 - INFO - User registration succeeded for merchant2@example.com
+2025-05-01 05:14:25,971 - 21f1390f9444e61651414c11d0d3f3712f206c702330569d41b22e9d6654ad08 - INFO - tried login for user: merchant1@example.com, got status=200 cookies=<RequestsCookieJar[<Cookie AUTH_COOKIE=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1lcmNoYW50MUBleGFtcGxlLmNvbSIsImV4cCI6MTc0NjE3NzI2NX0.0030zEd1X3ULPMwKtHtyC3n_EVUnKqSbEdYQ-Vx7wfs for localhost.local/>]>
+2025-05-01 05:14:25,987 - 21f1390f9444e61651414c11d0d3f3712f206c702330569d41b22e9d6654ad08 - INFO - tried login for user: merchant2@example.com, got status=200 cookies=<RequestsCookieJar[<Cookie AUTH_COOKIE=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1lcmNoYW50MkBleGFtcGxlLmNvbSIsImV4cCI6MTc0NjE3NzI2NX0._eMHqUR-PDvEUJyfbuDd4vpR60cOejJScHXSwhmUDJk for localhost.local/>]>
+2025-05-01 05:14:25,993 - 21f1390f9444e61651414c11d0d3f3712f206c702330569d41b22e9d6654ad08 - INFO - got response for uploading wares=
+"Apple","A fruit",1.0
+"Banana","A yellow fruit",0.5
+"Carrot","A vegetable",0.25
+
+ status_code=200 text={"message":"Wares uploaded successfully"}
+
+2025-05-01 05:14:26,003 - 21f1390f9444e61651414c11d0d3f3712f206c702330569d41b22e9d6654ad08 - INFO - got response from GET /wares params={} status=200 text=
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Available Wares</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Available Wares</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Merchant</th>
+            </tr>
+            
+            <tr>
+                <td>Apple</td>
+                <td>A fruit</td>
+                <td>$1.00</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>Banana</td>
+                <td>A yellow fruit</td>
+                <td>$0.50</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>Carrot</td>
+                <td>A vegetable</td>
+                <td>$0.25</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+        </table>
+    </body>
+    </html>
+    
+2025-05-01 05:14:26,009 - 21f1390f9444e61651414c11d0d3f3712f206c702330569d41b22e9d6654ad08 - INFO - got response for uploading wares=
+"Dog","A pet",100.0
+"Cat","Another pet",50.0
+"Fish","A fish",25.0
+
+ status_code=200 text={"message":"Wares uploaded successfully"}
+
+2025-05-01 05:14:26,014 - 21f1390f9444e61651414c11d0d3f3712f206c702330569d41b22e9d6654ad08 - INFO - got response from GET /wares params={} status=200 text=
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Available Wares</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Available Wares</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Merchant</th>
+            </tr>
+            
+            <tr>
+                <td>Apple</td>
+                <td>A fruit</td>
+                <td>$1.00</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>Banana</td>
+                <td>A yellow fruit</td>
+                <td>$0.50</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>Carrot</td>
+                <td>A vegetable</td>
+                <td>$0.25</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>Dog</td>
+                <td>A pet</td>
+                <td>$100.00</td>
+                <td>merchant2@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>Cat</td>
+                <td>Another pet</td>
+                <td>$50.00</td>
+                <td>merchant2@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>Fish</td>
+                <td>A fish</td>
+                <td>$25.00</td>
+                <td>merchant2@example.com</td>
+            </tr>
+            
+        </table>
+    </body>
+    </html>
+    
+2025-05-01 05:14:26,018 - 21f1390f9444e61651414c11d0d3f3712f206c702330569d41b22e9d6654ad08 - INFO - got response from GET /wares params={'minPrice': 20.0, 'maxPrice': 70.0} status=200 text=
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Available Wares</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Available Wares</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Merchant</th>
+            </tr>
+            
+            <tr>
+                <td>Cat</td>
+                <td>Another pet</td>
+                <td>$50.00</td>
+                <td>merchant2@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>Fish</td>
+                <td>A fish</td>
+                <td>$25.00</td>
+                <td>merchant2@example.com</td>
+            </tr>
+            
+        </table>
+    </body>
+    </html>
+    
+2025-05-01 05:14:26,018 - 21f1390f9444e61651414c11d0d3f3712f206c702330569d41b22e9d6654ad08 - WARNING - merchant email 'merchant1@example.com' not found in wares_html:
+'
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Available Wares</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Available Wares</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Merchant</th>
+            </tr>
+            
+            <tr>
+                <td>Cat</td>
+                <td>Another pet</td>
+                <td>$50.00</td>
+                <td>merchant2@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>Fish</td>
+                <td>A fish</td>
+                <td>$25.00</td>
+                <td>merchant2@example.com</td>
+            </tr>
+            
+        </table>
+    </body>
+    </html>
+    '

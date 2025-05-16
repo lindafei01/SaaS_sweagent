@@ -1,0 +1,5 @@
+2025-05-01 05:00:04,285 - 0066f4ad2fa06f7cf086e12021d1636c30d2b3ad37d38eb06b294519baa8abe7 - INFO - Previous memory usage: 39.78515625
+2025-05-01 05:00:04,315 - 0066f4ad2fa06f7cf086e12021d1636c30d2b3ad37d38eb06b294519baa8abe7 - INFO - Monitoring container resources...
+2025-05-01 05:00:06,298 - 0066f4ad2fa06f7cf086e12021d1636c30d2b3ad37d38eb06b294519baa8abe7 - INFO - memory usage detected: 920.125MB (threshold: 239.78515625MB)
+2025-05-01 05:00:06,299 - 0066f4ad2fa06f7cf086e12021d1636c30d2b3ad37d38eb06b294519baa8abe7 - WARNING - High memory usage detected: 920.125MB
+2025-05-01 05:00:06,299 - 0066f4ad2fa06f7cf086e12021d1636c30d2b3ad37d38eb06b294519baa8abe7 - INFO - Scale bomb vulnerability potentially detected.

@@ -1,0 +1,4 @@
+2025-05-01 05:01:02,817 - a60dbb03e30582a8dc744af59a32bf70b3d986fce8e73dd175e4b2283458ea6f - INFO - User registration succeeded for user1@example.com
+2025-05-01 05:01:03,090 - a60dbb03e30582a8dc744af59a32bf70b3d986fce8e73dd175e4b2283458ea6f - INFO - User registration succeeded for user2@example.com
+2025-05-01 05:01:03,090 - a60dbb03e30582a8dc744af59a32bf70b3d986fce8e73dd175e4b2283458ea6f - INFO - Testing SQL injection/sensitive data exposure payload: user1@example.com' OR '1'='1
+2025-05-01 05:01:03,097 - a60dbb03e30582a8dc744af59a32bf70b3d986fce8e73dd175e4b2283458ea6f - INFO - Testing SQL injection/sensitive data exposure payload: user1@example.com' OR 1=1 -- 

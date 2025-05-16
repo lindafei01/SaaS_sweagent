@@ -1,0 +1,36 @@
+2025-05-01 05:02:43,251 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with ; touch /file.cpp
+2025-05-01 05:02:43,285 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,302 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,302 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with touch /file.cpp
+2025-05-01 05:02:43,317 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,330 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,330 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with ; touch /danger.txt
+2025-05-01 05:02:43,345 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,359 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,360 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with ; touch /file.cpp;
+2025-05-01 05:02:43,377 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,392 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,392 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with touch /file.cpp;
+2025-05-01 05:02:43,408 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,420 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,420 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with ; touch /danger.txt;
+2025-05-01 05:02:43,435 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,445 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,446 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with ; touch /file.cpp #
+2025-05-01 05:02:43,458 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,468 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,468 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with touch /file.cpp #
+2025-05-01 05:02:43,481 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,490 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,491 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with ; touch /danger.txt #
+2025-05-01 05:02:43,504 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,514 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,514 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with "; touch /danger.txt #
+2025-05-01 05:02:43,531 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,543 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,543 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with '; touch /danger.txt #
+2025-05-01 05:02:43,558 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,572 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,573 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - Trying OS injection with ${IFS}touch${IFS}/danger.pdf
+2025-05-01 05:02:43,608 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image
+2025-05-01 05:02:43,621 - a05208d51c725396735ecca9c235167f919976aa8f4cb1c2f58df82b5ac2eae3 - INFO - OS Injection failed: File not found in docker image

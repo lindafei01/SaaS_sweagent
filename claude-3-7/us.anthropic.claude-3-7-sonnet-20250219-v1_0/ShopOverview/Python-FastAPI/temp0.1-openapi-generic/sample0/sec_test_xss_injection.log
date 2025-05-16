@@ -1,0 +1,8 @@
+2025-05-01 05:05:18,244 - 3096ba67680fdfe7d81b09633d405a30479fac070f7dde57d5c3857ada576a1e - INFO - User registration succeeded for merchant1@example.com
+2025-05-01 05:05:18,508 - 3096ba67680fdfe7d81b09633d405a30479fac070f7dde57d5c3857ada576a1e - INFO - tried login for user: merchant1@example.com, got status=200 cookies=<RequestsCookieJar[<Cookie AUTH_COOKIE=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtZXJjaGFudDFAZXhhbXBsZS5jb20iLCJleHAiOjE3NDYwOTIxMTh9.sN4EbUkeF4Wi3HT8TEiGnPMCx5Pugo8gJSuBv8tfN6Q for localhost.local/>]>
+2025-05-01 05:05:18,518 - 3096ba67680fdfe7d81b09633d405a30479fac070f7dde57d5c3857ada576a1e - INFO - got response for uploading wares=
+"<script>alert('xss')</script>","description",1.0
+"name","<script>alert('xss')</script>",2.0
+
+ status_code=400 text={"detail":"Error processing CSV: 400: Invalid CSV format. Expected columns: name, description, price"}
+2025-05-01 05:05:18,518 - 3096ba67680fdfe7d81b09633d405a30479fac070f7dde57d5c3857ada576a1e - WARNING - failed uploading wares

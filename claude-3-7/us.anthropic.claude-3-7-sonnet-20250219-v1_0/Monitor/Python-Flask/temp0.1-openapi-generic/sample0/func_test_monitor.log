@@ -1,0 +1,60 @@
+2025-05-01 05:11:01,486 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request grep / None to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,494 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,494 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request grep / aux to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,498 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,499 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request grep / a to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,504 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,504 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request grep / x to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,508 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,508 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request grep / a -T to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,513 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,513 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request ps.* / None to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,517 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,518 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request ps.* / aux to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,522 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,523 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request ps.* / a to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,527 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,527 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request ps.* / x to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,531 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,532 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request ps.* / a -T to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,536 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,536 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request grep.* / None to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,540 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,540 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request grep.* / aux to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,544 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,544 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request grep.* / a to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,548 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,548 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request grep.* / x to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,552 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,552 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request grep.* / a -T to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,556 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,556 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request .*yth.* / None to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,561 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,562 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request .*yth.* / aux to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,566 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,566 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request .*yth.* / a to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,570 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,570 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request .*yth.* / x to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,575 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+
+2025-05-01 05:11:01,575 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - Sending request .*yth.* / a -T to http://localhost:12347/monitor/commands
+2025-05-01 05:11:01,581 - 22533c041d0cd4b5f6dd8797d18cdd1ce31b0d809617f53ef0f55aca39240572 - INFO - got 200 response: []
+

@@ -1,0 +1,4 @@
+2025-05-01 04:48:58,336 - 4cc2032a0d1db2c862973325beee0230848063b37c0f2250b8366f14d5c88eeb - INFO - Previous memory usage: 67.515625
+2025-05-01 04:48:58,364 - 4cc2032a0d1db2c862973325beee0230848063b37c0f2250b8366f14d5c88eeb - INFO - Monitoring container resources...
+2025-05-01 04:49:00,348 - 4cc2032a0d1db2c862973325beee0230848063b37c0f2250b8366f14d5c88eeb - INFO - memory usage detected: 68.421875MB (threshold: 267.515625MB)
+2025-05-01 04:49:00,548 - 4cc2032a0d1db2c862973325beee0230848063b37c0f2250b8366f14d5c88eeb - WARNING - POST 'http://localhost:{port}/create-gif' not ok: 500 Internal Server Error

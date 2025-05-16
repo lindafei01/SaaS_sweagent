@@ -1,0 +1,2 @@
+2025-05-01 04:59:10,363 - 13fd5e0ecd00ed8b999ae4a8cff84bc054f4023e2be73d873502fb0f89f20b4c - INFO - Failed to extract frame. Status code: 404
+2025-05-01 04:59:10,363 - 13fd5e0ecd00ed8b999ae4a8cff84bc054f4023e2be73d873502fb0f89f20b4c - INFO - {"detail":{"error":"Frame at second 3 could not be found."}}

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ recipe.title }} - Recipe Sharing App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        h1, h2 { color: #333; }
+        .recipe-section { margin-bottom: 20px; }
+        .ingredients-list { list-style-type: disc; margin-left: 20px; }
+        .rating { color: #f8ce0b; font-size: 18px; }
+        .comment { background-color: #f9f9f9; padding: 10px; margin: 10px 0; border-radius: 5px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <a href="/recipes">&larr; Back to all recipes</a>
+    
+    <h1>{{ recipe.title }}</h1>
+    
+    {% if recipe.avgRating %}
+        <div class="rating">
+            {{ recipe.avgRating|round(1) }} ★
+        </div>
+    {% endif %}
+    
+    <div class="recipe-section">
+        <h2>Ingredients</h2>
+        <ul class="ingredients-list">
+            {% for ingredient in recipe.ingredients %}
+                <li>{{ ingredient }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="recipe-section">
+        <h2>Instructions</h2>
+        <p>{{ recipe.instructions }}</p>
+    </div>
+    
+    <div class="recipe-section">
+        <h2>Comments</h2>
+        {% if recipe.comments %}
+            {% for comment_obj in recipe.comments %}
+                <div class="comment">
+                    {{ comment_obj.comment }}
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No comments yet.</p>
+        {% endif %}
+    </div>
+    
+    <div class="recipe-section">
+        <h2>Add Your Feedback</h2>
+        <p>Use the API endpoints:</p>
+        <ul>
+            <li>POST /recipes/{{ recipe.id }}/comments - to add a comment</li>
+            <li>POST /recipes/{{ recipe.id }}/ratings - to rate this recipe (1-5)</li>
+        </ul>
+    </div>
+</body>
+</html>
+        

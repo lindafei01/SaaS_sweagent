@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyForum - Messages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .message {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .username {
+            font-weight: bold;
+            color: #333;
+        }
+        .timestamp {
+            color: #999;
+            font-size: 0.8em;
+        }
+        .content {
+            margin-top: 5px;
+        }
+        .controls {
+            margin: 20px 0;
+        }
+        .post-form {
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input, textarea, button {
+            padding: 8px;
+            margin: 5px 0;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MyForum Messages</h1>
+    
+    <div class="controls">
+        <form id="filter-form" method="get">
+            <label for="limit">Limit:</label>
+            <input type="number" id="limit" name="limit" value="{{ limit }}" min="1">
+            
+            <label for="offset">Offset:</label>
+            <input type="number" id="offset" name="offset" value="{{ offset }}" min="0">
+            
+            <label for="sort">Sort:</label>
+            <select id="sort" name="sort">
+                <option value="DESC" {% if sort == 'DESC' %}selected{% endif %}>Newest First</option>
+                <option value="ASC" {% if sort == 'ASC' %}selected{% endif %}>Oldest First</option>
+            </select>
+            
+            <button type="submit">Apply</button>
+        </form>
+    </div>
+    
+    <div class="messages">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="message">
+                    <div class="username">{{ message.username }}</div>
+                    <div class="timestamp">{{ message.created_at }}</div>
+                    <div class="content">{{ message.content }}</div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No messages yet. Be the first to post!</p>
+        {% endif %}
+    </div>
+    
+    <div class="post-form">
+        <h2>Post a New Message</h2>
+        <form id="post-form">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="content">Message:</label>
+                <textarea id="content" name="content" required></textarea>
+            </div>
+            <button type="submit">Post Message</button>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('post-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const content = document.getElementById('content').value;
+            
+            if (!username || !content) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            fetch('/messages', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    username: username,
+                    content: content
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error('Network response was not ok');
+            })
+            .then(data => {
+                alert('Message posted successfully!');
+                window.location.reload();
+            })
+            .catch(error => {
+                alert('Error posting message: ' + error.message);
+            });
+        });
+    </script>
+</body>
+</html>

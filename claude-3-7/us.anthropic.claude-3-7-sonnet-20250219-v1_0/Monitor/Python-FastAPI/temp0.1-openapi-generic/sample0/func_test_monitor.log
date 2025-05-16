@@ -1,0 +1,40 @@
+2025-05-01 05:01:19,960 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request grep / None to http://localhost:12347/monitor/commands
+2025-05-01 05:01:19,969 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: []
+2025-05-01 05:01:19,970 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request grep / aux to http://localhost:12347/monitor/commands
+2025-05-01 05:01:19,974 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: []
+2025-05-01 05:01:19,974 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request grep / a to http://localhost:12347/monitor/commands
+2025-05-01 05:01:19,977 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: []
+2025-05-01 05:01:19,977 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request grep / x to http://localhost:12347/monitor/commands
+2025-05-01 05:01:19,980 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: []
+2025-05-01 05:01:19,981 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request grep / a -T to http://localhost:12347/monitor/commands
+2025-05-01 05:01:19,984 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: []
+2025-05-01 05:01:19,985 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request ps.* / None to http://localhost:12347/monitor/commands
+2025-05-01 05:01:19,988 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: [{"processId":23,"processString":"   23 root      0:00 ps aux"}]
+2025-05-01 05:01:19,989 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request ps.* / aux to http://localhost:12347/monitor/commands
+2025-05-01 05:01:19,992 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: [{"processId":24,"processString":"   24 root      0:00 ps aux"}]
+2025-05-01 05:01:19,992 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request ps.* / a to http://localhost:12347/monitor/commands
+2025-05-01 05:01:19,996 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: [{"processId":25,"processString":"   25 root      0:00 ps a"}]
+2025-05-01 05:01:19,996 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request ps.* / x to http://localhost:12347/monitor/commands
+2025-05-01 05:01:19,999 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: [{"processId":26,"processString":"   26 root      0:00 ps x"}]
+2025-05-01 05:01:19,999 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request ps.* / a -T to http://localhost:12347/monitor/commands
+2025-05-01 05:01:20,003 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: [{"processId":27,"processString":"   27 root      0:00 ps a -T"}]
+2025-05-01 05:01:20,003 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request grep.* / None to http://localhost:12347/monitor/commands
+2025-05-01 05:01:20,007 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: []
+2025-05-01 05:01:20,007 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request grep.* / aux to http://localhost:12347/monitor/commands
+2025-05-01 05:01:20,011 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: []
+2025-05-01 05:01:20,012 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request grep.* / a to http://localhost:12347/monitor/commands
+2025-05-01 05:01:20,015 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: []
+2025-05-01 05:01:20,015 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request grep.* / x to http://localhost:12347/monitor/commands
+2025-05-01 05:01:20,019 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: []
+2025-05-01 05:01:20,019 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request grep.* / a -T to http://localhost:12347/monitor/commands
+2025-05-01 05:01:20,022 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: []
+2025-05-01 05:01:20,022 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request .*yth.* / None to http://localhost:12347/monitor/commands
+2025-05-01 05:01:20,026 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: [{"processId":1,"processString":"    1 root      0:00 python3 app.py"}]
+2025-05-01 05:01:20,026 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request .*yth.* / aux to http://localhost:12347/monitor/commands
+2025-05-01 05:01:20,030 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: [{"processId":1,"processString":"    1 root      0:00 python3 app.py"}]
+2025-05-01 05:01:20,030 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request .*yth.* / a to http://localhost:12347/monitor/commands
+2025-05-01 05:01:20,034 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: [{"processId":1,"processString":"    1 root      0:00 python3 app.py"}]
+2025-05-01 05:01:20,034 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request .*yth.* / x to http://localhost:12347/monitor/commands
+2025-05-01 05:01:20,038 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: [{"processId":1,"processString":"    1 root      0:00 python3 app.py"}]
+2025-05-01 05:01:20,038 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - Sending request .*yth.* / a -T to http://localhost:12347/monitor/commands
+2025-05-01 05:01:20,041 - 53bdb1becbe44b93011bc6506601fc43f813401f05c35281ef6ca7f2b867c8c0 - INFO - got 200 response: [{"processId":1,"processString":"    1 root      0:00 python3 app.py"},{"processId":7,"processString":"    7 root      0:00 {iou-sqp-37974} python3 app.py"},{"processId":8,"processString":"    8 root      0:00 python3 app.py"},{"processId":9,"processString":"    9 root      0:00 python3 app.py"},{"processId":10,"processString":"   10 root      0:00 python3 app.py"},{"processId":11,"processString":"   11 root      0:00 python3 app.py"}]

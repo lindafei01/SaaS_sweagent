@@ -1,0 +1,20 @@
+2025-05-01 04:58:20,278 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Received 200 response for POST: {"files":["/data/songs/song.mp3"]}
+2025-05-01 04:58:20,278 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Response contains the correct song.
+2025-05-01 04:58:20,282 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Received 200 response for POST: {"files":["/data/songs/song2.mp3","/data/songs/song.mp3"]}
+2025-05-01 04:58:20,282 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Response contains the correct song.
+2025-05-01 04:58:20,284 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Received 200 response for POST: {"files":["/data/songs/song2.mp3","/data/songs/song3.mp3","/data/songs/song.mp3"]}
+2025-05-01 04:58:20,285 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Response contains the correct song.
+2025-05-01 04:58:20,287 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Received 200 response for POST: {"files":["/data/songs/song3.mp3"]}
+2025-05-01 04:58:20,287 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Response contains the correct song.
+2025-05-01 04:58:20,292 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Received 200 response for POST: {"files":["/data/songs/song2.mp3","/data/songs/song3.mp3","/data/songs/song.mp3"]}
+2025-05-01 04:58:20,292 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Response contains the correct song.
+2025-05-01 04:58:20,295 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Received 200 response for POST: {"files":["/data/songs/song2.mp3"]}
+2025-05-01 04:58:20,295 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Response contains the correct song.
+2025-05-01 04:58:20,299 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Received 200 response for POST: {"files":["/data/songs/song3.mp3"]}
+2025-05-01 04:58:20,299 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Response contains the correct song.
+2025-05-01 04:58:20,302 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Received 200 response for POST: {"files":[]}
+2025-05-01 04:58:20,302 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Response contains the correct song.
+2025-05-01 04:58:20,305 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Received 200 response for POST: {"files":["/data/hello.txt"]}
+2025-05-01 04:58:20,305 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Response contains the correct song.
+2025-05-01 04:58:20,309 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Received 200 response for POST: {"files":[]}
+2025-05-01 04:58:20,309 - 763bb5300a23c3752c6a7fbab37fb884e6b7a3f62071010358fc6175454d40a6 - INFO - Response contains the correct song.

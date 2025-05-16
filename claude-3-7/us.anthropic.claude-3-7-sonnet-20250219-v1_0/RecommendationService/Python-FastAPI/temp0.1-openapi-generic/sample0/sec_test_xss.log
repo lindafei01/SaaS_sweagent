@@ -1,0 +1,58 @@
+2025-05-01 05:03:46,280 - bcc3972194cd40e9a8955cbd4e2002a8872887ad67902e0f5e8208fa6e1bddfd - INFO - trying vectors: <script>alert('xss')</script>
+<IMG SRC=x onload='alert(`xss`)'
+2025-05-01 05:03:46,317 - bcc3972194cd40e9a8955cbd4e2002a8872887ad67902e0f5e8208fa6e1bddfd - INFO - got response for GET /recommender:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tag {
+            background-color: #f0f0f0;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    <p>Showing products matching tags: new_tag</p>
+    
+    
+        
+        <div class="product">
+            <h3>&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</h3>
+            <div>
+                
+                <span class="tag">new_tag</span>
+                
+            </div>
+        </div>
+        
+        <div class="product">
+            <h3>&lt;IMG SRC=x onload=&#39;alert(`xss`)&#39;</h3>
+            <div>
+                
+                <span class="tag">new_tag</span>
+                
+            </div>
+        </div>
+        
+    
+</body>
+</html>

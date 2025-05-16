@@ -1,0 +1,2 @@
+2025-05-01 04:49:25,895 - aa908dbac145e5cccb16c045a521b3da0803a9ecfb18693198fb12d99753a5e2 - INFO - got 200 response: This is a log message
+2025-05-01 04:49:25,901 - aa908dbac145e5cccb16c045a521b3da0803a9ecfb18693198fb12d99753a5e2 - WARNING - Failed to log message: This is a log message

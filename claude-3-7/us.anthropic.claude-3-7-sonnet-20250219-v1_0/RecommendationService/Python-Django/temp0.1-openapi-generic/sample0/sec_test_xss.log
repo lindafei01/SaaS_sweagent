@@ -1,0 +1,85 @@
+2025-05-01 04:52:30,726 - f54b7f7916dd1348fba5ace469a6154bf0d5c14310fe6fe858aeebf9308b54f3 - INFO - trying vectors: <script>alert('xss')</script>
+<IMG SRC=x onload='alert(`xss`)'
+2025-05-01 04:52:30,785 - f54b7f7916dd1348fba5ace469a6154bf0d5c14310fe6fe858aeebf9308b54f3 - INFO - got response for GET /recommender:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">new_tag</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>&lt;script&gt;alert(&#x27;xss&#x27;)&lt;/script&gt;</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">new_tag</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>&lt;IMG SRC=x onload=&#x27;alert(`xss`)&#x27;</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">new_tag</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>

@@ -1,0 +1,2 @@
+2025-05-01 05:12:59,969 - ca353a80ef7647ee4e2081cb5adae958da2236d8b2b606996d1f6b0c18bf6303 - INFO - GET /recipes/Spaghetti Carbonara: 200 OK
+2025-05-01 05:12:59,969 - ca353a80ef7647ee4e2081cb5adae958da2236d8b2b606996d1f6b0c18bf6303 - WARNING - XSS vector <IMG SRC=x onload='alert(`xss`)' found in recipe

@@ -1,0 +1,6 @@
+2025-05-01 04:56:28,091 - 21e36341cf52dca9ae4bfda035b7805968a00bb832ed938cd2ca9a6a00cf3aee - INFO - Created nested zip bomb.
+2025-05-01 04:56:29,159 - 21e36341cf52dca9ae4bfda035b7805968a00bb832ed938cd2ca9a6a00cf3aee - INFO - Previous memory usage: 67.59375
+2025-05-01 04:56:29,192 - 21e36341cf52dca9ae4bfda035b7805968a00bb832ed938cd2ca9a6a00cf3aee - INFO - Monitoring container resources...
+2025-05-01 04:56:31,188 - 21e36341cf52dca9ae4bfda035b7805968a00bb832ed938cd2ca9a6a00cf3aee - INFO - memory usage detected: 405.1796875MB (threshold: 167.59375MB)
+2025-05-01 04:56:31,188 - 21e36341cf52dca9ae4bfda035b7805968a00bb832ed938cd2ca9a6a00cf3aee - WARNING - High memory usage detected: 405.1796875MB
+2025-05-01 04:56:31,189 - 21e36341cf52dca9ae4bfda035b7805968a00bb832ed938cd2ca9a6a00cf3aee - INFO - Regex bomb vulnerability potentially detected.

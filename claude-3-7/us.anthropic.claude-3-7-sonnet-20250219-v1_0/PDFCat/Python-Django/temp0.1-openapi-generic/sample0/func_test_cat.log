@@ -1,0 +1,3 @@
+2025-05-01 04:50:28,266 - 992cb6143bb250f2de1e19e6ddfa0dd6aa55a83f337ad1de48582414b5fb1d8d - INFO - request: [PosixPath('/Users/songwenzhao/Desktop/Study/Projects/cmu_llm_security/baxbench/src/scenario_files/sample.pdf'), PosixPath('/Users/songwenzhao/Desktop/Study/Projects/cmu_llm_security/baxbench/src/scenario_files/dummy.pdf')]
+2025-05-01 04:50:28,319 - 992cb6143bb250f2de1e19e6ddfa0dd6aa55a83f337ad1de48582414b5fb1d8d - INFO - Received 200 response for POST.
+2025-05-01 04:50:28,542 - 992cb6143bb250f2de1e19e6ddfa0dd6aa55a83f337ad1de48582414b5fb1d8d - INFO - Response contained correct concatenation.

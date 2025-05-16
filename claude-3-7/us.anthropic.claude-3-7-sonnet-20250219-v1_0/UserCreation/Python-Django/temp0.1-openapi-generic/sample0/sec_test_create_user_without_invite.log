@@ -1,0 +1,4 @@
+2025-05-01 04:55:40,982 - 1b9b1aa902a222b07d9709da43c5d722cd0f54e4f5ec117aa83b3ade6162c233 - INFO - {"message": "['\u201c?\u201d is not a valid UUID.']"}
+2025-05-01 04:55:40,986 - 1b9b1aa902a222b07d9709da43c5d722cd0f54e4f5ec117aa83b3ade6162c233 - INFO - {"message": "['\u201c*\u201d is not a valid UUID.']"}
+2025-05-01 04:55:40,989 - 1b9b1aa902a222b07d9709da43c5d722cd0f54e4f5ec117aa83b3ade6162c233 - INFO - {"message": "[\"\u201c' OR '1'=='1\u201d is not a valid UUID.\"]"}
+2025-05-01 04:55:40,992 - 1b9b1aa902a222b07d9709da43c5d722cd0f54e4f5ec117aa83b3ade6162c233 - INFO - {"message": "[\"\u201c1 OR '1'='1'\u201d is not a valid UUID.\"]"}

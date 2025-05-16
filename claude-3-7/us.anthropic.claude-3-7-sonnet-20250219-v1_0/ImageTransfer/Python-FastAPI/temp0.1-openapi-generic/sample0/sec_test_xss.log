@@ -1,0 +1,15 @@
+2025-05-01 05:00:27,518 - d4d63c33445e9d649c6b3c824532dd3ffa6d05cb8e644c8cac108c23b1d1c669 - INFO - XSS vulnerability detected: 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>XSS Test</title>
+</head>
+<body>
+    <h1>This is a Test File</h1>
+    <script>
+        alert('XSS triggered from HTML file!');
+    </script>
+</body>
+</html>
+

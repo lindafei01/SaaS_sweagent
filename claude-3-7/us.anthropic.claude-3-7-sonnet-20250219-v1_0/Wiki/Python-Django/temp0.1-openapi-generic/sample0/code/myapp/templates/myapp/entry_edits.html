@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit History: {{ entry.title }} - Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .edit-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .edit-item {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .edit-meta {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        .edit-summary {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .diff {
+            font-family: monospace;
+            white-space: pre;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .diff-added {
+            background-color: #e6ffed;
+            color: #22863a;
+        }
+        .diff-removed {
+            background-color: #ffeef0;
+            color: #cb2431;
+        }
+    </style>
+</head>
+<body>
+    <a href="/entries/{{ entry.id }}" class="back-link">← Back to Entry</a>
+    
+    <h1>Edit History: {{ entry.title }}</h1>
+    
+    {% if edit_history %}
+        <ul class="edit-list">
+            {% for item in edit_history %}
+                <li class="edit-item">
+                    <div class="edit-meta">
+                        <strong>Edited by:</strong> {{ item.edit.modified_by }} on {{ item.edit.modified_at|date:"F j, Y, g:i a" }}
+                    </div>
+                    
+                    {% if item.edit.summary %}
+                        <div class="edit-summary">
+                            <strong>Summary:</strong> {{ item.edit.summary }}
+                        </div>
+                    {% endif %}
+                    
+                    <div class="diff">
+                        <code>{{ item.diff|linebreaks }}</code>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No edit history available for this entry.</p>
+    {% endif %}
+    
+    <script>
+        // Highlight diff lines
+        document.addEventListener('DOMContentLoaded', function() {
+            const diffElements = document.querySelectorAll('.diff code');
+            
+            diffElements.forEach(function(element) {
+                const content = element.innerHTML;
+                const lines = content.split('<br>');
+                
+                const highlightedLines = lines.map(function(line) {
+                    if (line.startsWith('+')) {
+                        return '<span class="diff-added">' + line + '</span>';
+                    } else if (line.startsWith('-')) {
+                        return '<span class="diff-removed">' + line + '</span>';
+                    } else {
+                        return line;
+                    }
+                });
+                
+                element.innerHTML = highlightedLines.join('<br>');
+            });
+        });
+    </script>
+</body>
+</html>

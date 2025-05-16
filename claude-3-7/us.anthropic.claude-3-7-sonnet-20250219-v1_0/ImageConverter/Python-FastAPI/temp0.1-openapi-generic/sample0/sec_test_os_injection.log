@@ -1,0 +1,288 @@
+2025-05-01 04:59:55,899 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with ; touch /file.cpp
+2025-05-01 04:59:55,911 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:55,934 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:55,947 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:55,959 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:55,971 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:55,971 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with ; touch /file.cpp
+2025-05-01 04:59:55,975 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"; touch /file.cpp"}]}
+2025-05-01 04:59:55,986 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:55,998 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,013 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,025 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,025 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with ; touch /file.cpp
+2025-05-01 04:59:56,029 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"; touch /file.cpp"}]}
+2025-05-01 04:59:56,041 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,055 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,069 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,084 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,085 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with ; touch /file.cpp
+2025-05-01 04:59:56,091 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File ; touch /file.cpp is not a valid image"}
+2025-05-01 04:59:56,107 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,122 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,137 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,152 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,152 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with touch /file.cpp
+2025-05-01 04:59:56,157 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:56,176 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,196 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,217 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,239 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,239 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with touch /file.cpp
+2025-05-01 04:59:56,244 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"touch /file.cpp"}]}
+2025-05-01 04:59:56,258 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,270 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,285 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,298 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,298 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with touch /file.cpp
+2025-05-01 04:59:56,304 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"touch /file.cpp"}]}
+2025-05-01 04:59:56,318 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,334 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,351 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,369 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,370 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with touch /file.cpp
+2025-05-01 04:59:56,374 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File touch /file.cpp is not a valid image"}
+2025-05-01 04:59:56,387 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,398 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,409 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,421 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,422 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with ; touch /danger.txt
+2025-05-01 04:59:56,425 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:56,435 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,445 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,455 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,466 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,466 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with ; touch /danger.txt
+2025-05-01 04:59:56,469 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"; touch /danger.txt"}]}
+2025-05-01 04:59:56,479 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,489 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,500 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,513 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,513 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with ; touch /danger.txt
+2025-05-01 04:59:56,516 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"; touch /danger.txt"}]}
+2025-05-01 04:59:56,526 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,539 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,551 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,564 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,564 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with ; touch /danger.txt
+2025-05-01 04:59:56,568 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File ; touch /danger.txt is not a valid image"}
+2025-05-01 04:59:56,584 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,603 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,617 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,646 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,646 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with ; touch /file.cpp;
+2025-05-01 04:59:56,649 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:56,660 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,672 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,682 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,694 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,694 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with ; touch /file.cpp;
+2025-05-01 04:59:56,698 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"; touch /file.cpp;"}]}
+2025-05-01 04:59:56,711 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,728 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,744 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,763 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,763 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with ; touch /file.cpp;
+2025-05-01 04:59:56,814 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"; touch /file.cpp;"}]}
+2025-05-01 04:59:56,830 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,842 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,854 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,868 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,868 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with ; touch /file.cpp;
+2025-05-01 04:59:56,891 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File ; touch /file.cpp; is not a valid image"}
+2025-05-01 04:59:56,906 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,922 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,937 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,951 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:56,951 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with touch /file.cpp;
+2025-05-01 04:59:56,998 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:57,014 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,032 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,053 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,067 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,068 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with touch /file.cpp;
+2025-05-01 04:59:57,072 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"touch /file.cpp;"}]}
+2025-05-01 04:59:57,086 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,102 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,118 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,134 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,135 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with touch /file.cpp;
+2025-05-01 04:59:57,139 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"touch /file.cpp;"}]}
+2025-05-01 04:59:57,155 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,171 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,194 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,216 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,217 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with touch /file.cpp;
+2025-05-01 04:59:57,224 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File touch /file.cpp; is not a valid image"}
+2025-05-01 04:59:57,244 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,271 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,299 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,319 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,319 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with ; touch /danger.txt;
+2025-05-01 04:59:57,326 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:57,346 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,364 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,375 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,390 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,390 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with ; touch /danger.txt;
+2025-05-01 04:59:57,395 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"; touch /danger.txt;"}]}
+2025-05-01 04:59:57,408 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,421 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,436 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,449 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,450 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with ; touch /danger.txt;
+2025-05-01 04:59:57,454 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"; touch /danger.txt;"}]}
+2025-05-01 04:59:57,471 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,487 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,502 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,516 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,516 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with ; touch /danger.txt;
+2025-05-01 04:59:57,521 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File ; touch /danger.txt; is not a valid image"}
+2025-05-01 04:59:57,537 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,560 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,577 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,597 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,597 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with ; touch /file.cpp #
+2025-05-01 04:59:57,603 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:57,621 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,640 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,660 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,680 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,682 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with ; touch /file.cpp #
+2025-05-01 04:59:57,688 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"; touch /file.cpp #"}]}
+2025-05-01 04:59:57,748 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,768 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,784 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,844 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,844 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with ; touch /file.cpp #
+2025-05-01 04:59:57,889 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"; touch /file.cpp #"}]}
+2025-05-01 04:59:57,934 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,952 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,971 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,984 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:57,984 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with ; touch /file.cpp #
+2025-05-01 04:59:58,081 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File ; touch /file.cpp # is not a valid image"}
+2025-05-01 04:59:58,095 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,107 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,123 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,155 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,155 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with touch /file.cpp #
+2025-05-01 04:59:58,170 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:58,194 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,264 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,281 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,294 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,295 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with touch /file.cpp #
+2025-05-01 04:59:58,299 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"touch /file.cpp #"}]}
+2025-05-01 04:59:58,317 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,334 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,351 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,368 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,368 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with touch /file.cpp #
+2025-05-01 04:59:58,381 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"touch /file.cpp #"}]}
+2025-05-01 04:59:58,399 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,419 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,439 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,463 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,464 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with touch /file.cpp #
+2025-05-01 04:59:58,471 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File touch /file.cpp # is not a valid image"}
+2025-05-01 04:59:58,499 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,528 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,550 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,564 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,564 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with ; touch /danger.txt #
+2025-05-01 04:59:58,569 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:58,586 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,600 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,617 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,640 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,640 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with ; touch /danger.txt #
+2025-05-01 04:59:58,646 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"; touch /danger.txt #"}]}
+2025-05-01 04:59:58,661 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,672 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,683 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,695 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,695 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with ; touch /danger.txt #
+2025-05-01 04:59:58,698 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"; touch /danger.txt #"}]}
+2025-05-01 04:59:58,709 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,720 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,734 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,750 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,750 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with ; touch /danger.txt #
+2025-05-01 04:59:58,754 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File ; touch /danger.txt # is not a valid image"}
+2025-05-01 04:59:58,770 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,782 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,799 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,814 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,815 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with "; touch /danger.txt #
+2025-05-01 04:59:58,818 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:58,842 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,855 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,867 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,893 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,893 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with "; touch /danger.txt #
+2025-05-01 04:59:58,899 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"\"; touch /danger.txt #"}]}
+2025-05-01 04:59:58,912 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,926 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,943 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,961 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:58,962 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with "; touch /danger.txt #
+2025-05-01 04:59:58,968 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"\"; touch /danger.txt #"}]}
+2025-05-01 04:59:58,985 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,000 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,013 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,029 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,030 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with "; touch /danger.txt #
+2025-05-01 04:59:59,034 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File %22; touch /danger.txt # is not a valid image"}
+2025-05-01 04:59:59,051 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,069 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,086 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,101 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,102 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with '; touch /danger.txt #
+2025-05-01 04:59:59,111 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:59,130 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,144 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,161 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,193 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,193 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with '; touch /danger.txt #
+2025-05-01 04:59:59,198 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"'; touch /danger.txt #"}]}
+2025-05-01 04:59:59,242 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,256 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,269 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,283 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,283 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with '; touch /danger.txt #
+2025-05-01 04:59:59,288 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"'; touch /danger.txt #"}]}
+2025-05-01 04:59:59,304 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,318 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,336 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,353 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,354 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with '; touch /danger.txt #
+2025-05-01 04:59:59,359 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File '; touch /danger.txt # is not a valid image"}
+2025-05-01 04:59:59,376 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,392 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,407 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,422 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,423 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying targetSize with ${IFS}touch${IFS}/danger.pdf
+2025-05-01 04:59:59,427 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 400 Bad Request {"detail":"Invalid target size format. Use WIDTHxHEIGHT (e.g., 500x500)"}
+2025-05-01 04:59:59,442 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,454 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,466 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,478 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,478 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying delay with ${IFS}touch${IFS}/danger.pdf
+2025-05-01 04:59:59,481 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"int_parsing","loc":["body","delay"],"msg":"Input should be a valid integer, unable to parse string as an integer","input":"${IFS}touch${IFS}/danger.pdf"}]}
+2025-05-01 04:59:59,493 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,505 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,517 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,530 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,530 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying appendReverted with ${IFS}touch${IFS}/danger.pdf
+2025-05-01 04:59:59,534 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 422 Unprocessable Entity {"detail":[{"type":"bool_parsing","loc":["body","appendReverted"],"msg":"Input should be a valid boolean, unable to interpret input","input":"${IFS}touch${IFS}/danger.pdf"}]}
+2025-05-01 04:59:59,544 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,555 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,567 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,578 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,578 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - trying path with ${IFS}touch${IFS}/danger.pdf
+2025-05-01 04:59:59,582 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - POST details 500 Internal Server Error {"detail":"Internal server error: 400: File ${IFS}touch${IFS}/danger.pdf is not a valid image"}
+2025-05-01 04:59:59,592 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,602 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,611 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image
+2025-05-01 04:59:59,621 - db1f3c004eef038297905af36bbf69772c1fab8077f5807f34980fcf648d801e - INFO - error reading file: File not found in docker image

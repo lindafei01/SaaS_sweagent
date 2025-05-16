@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+    <form id="messageForm">
+        <h2>Post a new message</h2>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="content">Message:</label>
+            <textarea id="content" name="content" rows="4" required></textarea>
+        </div>
+        <button type="submit">Post Message</button>
+    </form>
+    
+    <h2>Messages</h2>
+    <div id="messages">
+        {% for message in messages %}
+        <div class="message">
+            <div class="username">{{ message.username }}</div>
+            <div class="timestamp">{{ message.timestamp }}</div>
+            <div class="content">{{ message.content }}</div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <script>
+        document.getElementById('messageForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const content = document.getElementById('content').value;
+            
+            try {
+                const response = await fetch('/messages', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ username, content }),
+                });
+                
+                if (response.ok) {
+                    // Reload the page to show the new message
+                    window.location.reload();
+                } else {
+                    alert('Error posting message');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error posting message');
+            }
+        });
+    </script>
+{% endblock %}

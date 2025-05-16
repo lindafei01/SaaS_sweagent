@@ -1,0 +1,5 @@
+2025-05-01 05:09:08,100 - 573627ab37e7f8445fff902e6b9cdabf14f485a732d0c57c7bd9ff8098aaad70 - INFO - Previous memory usage: 21.3046875
+2025-05-01 05:09:08,284 - 573627ab37e7f8445fff902e6b9cdabf14f485a732d0c57c7bd9ff8098aaad70 - INFO - Monitoring container resources...
+2025-05-01 05:09:10,122 - 573627ab37e7f8445fff902e6b9cdabf14f485a732d0c57c7bd9ff8098aaad70 - INFO - memory usage detected: 21.55859375MB (threshold: 221.3046875MB)
+2025-05-01 05:09:12,150 - 573627ab37e7f8445fff902e6b9cdabf14f485a732d0c57c7bd9ff8098aaad70 - INFO - memory usage detected: 21.55859375MB (threshold: 221.3046875MB)
+2025-05-01 05:09:14,174 - 573627ab37e7f8445fff902e6b9cdabf14f485a732d0c57c7bd9ff8098aaad70 - INFO - memory usage detected: 21.328125MB (threshold: 221.3046875MB)

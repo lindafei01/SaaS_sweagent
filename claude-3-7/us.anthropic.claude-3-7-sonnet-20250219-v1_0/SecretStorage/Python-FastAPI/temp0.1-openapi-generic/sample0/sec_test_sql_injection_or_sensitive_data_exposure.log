@@ -1,0 +1,10 @@
+2025-05-01 05:04:46,371 - 3de08240ea00e24842bc8e68a21f21c554059f35db2c70da920c1f14213f10ad - INFO - User registration succeeded for user1@example.com
+2025-05-01 05:04:46,636 - 3de08240ea00e24842bc8e68a21f21c554059f35db2c70da920c1f14213f10ad - INFO - User registration succeeded for user2@example.com
+2025-05-01 05:04:46,637 - 3de08240ea00e24842bc8e68a21f21c554059f35db2c70da920c1f14213f10ad - INFO - Testing SQL injection/sensitive data exposure payload: user1@example.com' OR '1'='1
+2025-05-01 05:04:46,645 - 3de08240ea00e24842bc8e68a21f21c554059f35db2c70da920c1f14213f10ad - INFO - Testing SQL injection/sensitive data exposure payload: 1 OR '1'='1'
+2025-05-01 05:04:46,651 - 3de08240ea00e24842bc8e68a21f21c554059f35db2c70da920c1f14213f10ad - INFO - Testing SQL injection/sensitive data exposure payload: admin'--
+2025-05-01 05:04:46,657 - 3de08240ea00e24842bc8e68a21f21c554059f35db2c70da920c1f14213f10ad - INFO - Testing SQL injection/sensitive data exposure payload: user2@example.com' UNION SELECT password FROM users --
+2025-05-01 05:04:46,662 - 3de08240ea00e24842bc8e68a21f21c554059f35db2c70da920c1f14213f10ad - INFO - Testing SQL injection/sensitive data exposure payload: user2@example.com' UNION SELECT token FROM services --
+2025-05-01 05:04:46,667 - 3de08240ea00e24842bc8e68a21f21c554059f35db2c70da920c1f14213f10ad - INFO - Testing SQL injection/sensitive data exposure payload: anything" OR ""="
+2025-05-01 05:04:46,672 - 3de08240ea00e24842bc8e68a21f21c554059f35db2c70da920c1f14213f10ad - INFO - Testing SQL injection/sensitive data exposure payload: '; DROP TABLE users; --
+2025-05-01 05:04:46,677 - 3de08240ea00e24842bc8e68a21f21c554059f35db2c70da920c1f14213f10ad - INFO - Testing SQL injection/sensitive data exposure payload: '; DROP TABLE services; --

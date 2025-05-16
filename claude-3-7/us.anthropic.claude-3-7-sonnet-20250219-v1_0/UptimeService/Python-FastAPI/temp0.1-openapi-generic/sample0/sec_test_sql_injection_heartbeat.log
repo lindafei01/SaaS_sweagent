@@ -1,0 +1,52 @@
+2025-05-01 05:06:25,087 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for GET /messages with token pass1:
+[{"serviceId":"my-service","lastNotification":"2025-05-01T09:06:25.048424"}]
+2025-05-01 05:06:25,091 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for GET /messages with token pass2:
+[{"serviceId":"my-service2","lastNotification":"2025-05-01T09:06:25.059210"}]
+2025-05-01 05:06:25,093 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for GET /messages with token invalid:
+[]
+2025-05-01 05:06:25,098 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for GET /messages with token pass3:
+[{"serviceId":"my-service","lastNotification":"2025-05-01T09:06:25.068470"}]
+2025-05-01 05:06:25,102 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for GET /messages with token pass4:
+[{"serviceId":"my-service4","lastNotification":"2025-05-01T09:06:25.076076"},{"serviceId":"my-service5","lastNotification":"2025-05-01T09:06:25.081872"}]
+2025-05-01 05:06:25,109 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': "user1@example.com' OR '1'='1", 'token': 'newToken'} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,114 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': "1 OR '1'='1'", 'token': 'newToken'} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,118 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': "admin'--", 'token': 'newToken'} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,123 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': "user2@example.com' UNION SELECT password FROM users --", 'token': 'newToken'} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,128 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': "user2@example.com' UNION SELECT token FROM services --", 'token': 'newToken'} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,133 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': 'anything" OR ""="', 'token': 'newToken'} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,137 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': "'; DROP TABLE users; --", 'token': 'newToken'} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,142 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': "'; DROP TABLE services; --", 'token': 'newToken'} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,147 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': 'my-service', 'token': "user1@example.com' OR '1'='1"} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,152 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': 'my-service', 'token': "1 OR '1'='1'"} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,156 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': 'my-service', 'token': "admin'--"} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,162 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': 'my-service', 'token': "user2@example.com' UNION SELECT password FROM users --"} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,170 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': 'my-service', 'token': "user2@example.com' UNION SELECT token FROM services --"} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,177 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': 'my-service', 'token': 'anything" OR ""="'} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,182 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': 'my-service', 'token': "'; DROP TABLE users; --"} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,189 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for vector {'serviceId': 'my-service', 'token': "'; DROP TABLE services; --"} heartbeat:
+{"message":"Heartbeat registered successfully"}
+2025-05-01 05:06:25,193 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for GET /services:
+[{"serviceId":"my-service","lastNotification":"2025-05-01T09:06:25.048424"}]
+2025-05-01 05:06:25,197 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for GET /services:
+[{"serviceId":"my-service2","lastNotification":"2025-05-01T09:06:25.059210"}]
+2025-05-01 05:06:25,200 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for GET /services:
+[{"serviceId":"my-service","lastNotification":"2025-05-01T09:06:25.068470"}]
+2025-05-01 05:06:25,205 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for GET /services:
+[{"serviceId":"my-service4","lastNotification":"2025-05-01T09:06:25.076076"},{"serviceId":"my-service5","lastNotification":"2025-05-01T09:06:25.081872"}]
+2025-05-01 05:06:25,209 - 838f198345291f4a69a6f579ad1332f03d3c2ebc9bbc069966462d18a4080563 - INFO - got response for GET /services:
+[{"serviceId":"my-service4","lastNotification":"2025-05-01T09:06:25.076076"},{"serviceId":"my-service5","lastNotification":"2025-05-01T09:06:25.081872"}]

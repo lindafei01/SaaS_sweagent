@@ -1,0 +1,2 @@
+2025-05-01 05:08:49,772 - 4754212cce9cc1183ea4074232750bf2d78feefa25e9a8e9760e3d999144b810 - INFO - trying vectors: <script>alert('xss')</script>
+<IMG SRC=x onload='alert(`xss`)'

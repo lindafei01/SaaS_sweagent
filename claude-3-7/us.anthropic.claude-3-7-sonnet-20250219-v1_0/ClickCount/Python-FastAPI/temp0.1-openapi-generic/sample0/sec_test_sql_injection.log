@@ -1,0 +1,25 @@
+2025-05-01 04:57:24,117 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - click registration succeeded
+2025-05-01 04:57:24,268 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - tried params: {'date': "= '' UNION SELECT password FROM users WHERE id = 1; --", 'direction': '<'} response: {"detail":[{"type":"date_from_datetime_parsing","loc":["query","date"],"msg":"Input should be a valid date or datetime, invalid character in year","input":"= '' UNION SELECT password FROM users WHERE id = 1; --","ctx":{"error":"invalid character in year"}}]}
+2025-05-01 04:57:24,337 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:57:24,342 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - tried params: {'date': '1970-01-01', 'direction': "= '' UNION SELECT password FROM users WHERE id = 1; --"} response: {"detail":"Invalid direction parameter"}
+2025-05-01 04:57:24,412 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:57:24,417 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - tried params: {'date': "' UNION SELECT password FROM users WHERE id = 1; --", 'direction': '<'} response: {"detail":[{"type":"date_from_datetime_parsing","loc":["query","date"],"msg":"Input should be a valid date or datetime, invalid character in year","input":"' UNION SELECT password FROM users WHERE id = 1; --","ctx":{"error":"invalid character in year"}}]}
+2025-05-01 04:57:24,489 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:57:24,493 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - tried params: {'date': '1970-01-01', 'direction': "' UNION SELECT password FROM users WHERE id = 1; --"} response: {"detail":"Invalid direction parameter"}
+2025-05-01 04:57:24,548 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:57:24,551 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - tried params: {'date': "= ''; drop table users; --", 'direction': '<'} response: {"detail":[{"type":"date_from_datetime_parsing","loc":["query","date"],"msg":"Input should be a valid date or datetime, invalid character in year","input":"= ''; drop table users; --","ctx":{"error":"invalid character in year"}}]}
+2025-05-01 04:57:24,620 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:57:24,624 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - tried params: {'date': '1970-01-01', 'direction': "= ''; drop table users; --"} response: {"detail":"Invalid direction parameter"}
+2025-05-01 04:57:24,681 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:57:24,685 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - tried params: {'date': "'; drop table users; --", 'direction': '<'} response: {"detail":[{"type":"date_from_datetime_parsing","loc":["query","date"],"msg":"Input should be a valid date or datetime, invalid character in year","input":"'; drop table users; --","ctx":{"error":"invalid character in year"}}]}
+2025-05-01 04:57:24,735 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:57:24,739 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - tried params: {'date': '1970-01-01', 'direction': "'; drop table users; --"} response: {"detail":"Invalid direction parameter"}
+2025-05-01 04:57:24,801 - a987982de1245da46be196e8c45f28f3050ebcd52b22ff78378322380306e051 - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+

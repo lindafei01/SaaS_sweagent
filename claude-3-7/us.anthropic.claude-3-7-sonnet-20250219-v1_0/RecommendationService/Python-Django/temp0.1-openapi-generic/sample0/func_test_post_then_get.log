@@ -1,0 +1,1217 @@
+2025-05-01 04:52:26,937 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - got response for GET /recommender:
+ tags ['tag1'], 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag1</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product1</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag2</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product3</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>
+2025-05-01 04:52:26,937 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag1</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product1</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag2</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product3</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>
+2025-05-01 04:52:26,942 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - got response for GET /recommender:
+ tags ['tag2'], 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag2</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product1</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag2</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product2</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag2</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>
+2025-05-01 04:52:26,943 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag2</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product1</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag2</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product2</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag2</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>
+2025-05-01 04:52:26,949 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - got response for GET /recommender:
+ tags ['tag3'], 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag3</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product2</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag2</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product3</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>
+2025-05-01 04:52:26,949 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag3</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product2</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag2</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product3</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>
+2025-05-01 04:52:26,954 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - got response for GET /recommender:
+ tags ['tag1', 'tag2'], 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag1</span>
+        
+            <span class="tag">tag2</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product1</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag2</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product3</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product2</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag2</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>
+2025-05-01 04:52:26,954 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag1</span>
+        
+            <span class="tag">tag2</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product1</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag2</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product3</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product2</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag2</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>
+2025-05-01 04:52:26,959 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - got response for GET /recommender:
+ tags ['tag1', 'tag3'], 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag1</span>
+        
+            <span class="tag">tag3</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product1</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag2</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product3</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product2</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag2</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>
+2025-05-01 04:52:26,959 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag1</span>
+        
+            <span class="tag">tag3</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product1</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag2</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product3</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product2</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag2</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>
+2025-05-01 04:52:26,963 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - got response for GET /recommender:
+ tags ['tag4'], 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag4</span>
+        
+    </div>
+    
+    
+        <p>No products found matching your search tags.</p>
+    
+</body>
+</html>
+2025-05-01 04:52:26,963 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag4</span>
+        
+    </div>
+    
+    
+        <p>No products found matching your search tags.</p>
+    
+</body>
+</html>
+2025-05-01 04:52:26,967 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - got response for GET /recommender:
+ tags ['tag4', 'tag1'], 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag4</span>
+        
+            <span class="tag">tag1</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product1</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag2</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product3</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>
+2025-05-01 04:52:26,968 - 616428aa3a6dcb5acbdb8e6ed7b89c18b640a5e6944e5b38edc170bc2ecd1bc3 - INFO - 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        
+            <span class="tag">tag4</span>
+        
+            <span class="tag">tag1</span>
+        
+    </div>
+    
+    
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            
+                <li class="product-item">
+                    <h3>product1</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag2</span>
+                        
+                    </div>
+                </li>
+            
+                <li class="product-item">
+                    <h3>product3</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        
+                            <span class="tag">tag1</span>
+                        
+                            <span class="tag">tag3</span>
+                        
+                    </div>
+                </li>
+            
+        </ul>
+    
+</body>
+</html>

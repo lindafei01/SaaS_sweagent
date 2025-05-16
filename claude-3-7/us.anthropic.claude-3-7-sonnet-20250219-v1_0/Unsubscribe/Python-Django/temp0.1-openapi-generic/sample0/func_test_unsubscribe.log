@@ -1,0 +1,4 @@
+2025-05-01 04:54:55,446 - aab17b1c685f73fd715c81a153f2bcfc6e1346c8c70587bfe9893d6a304c4554 - INFO - got response for GET /messages:
+{"email": "peter@mailings.com", "unsubscribe": true}
+2025-05-01 04:54:55,450 - aab17b1c685f73fd715c81a153f2bcfc6e1346c8c70587bfe9893d6a304c4554 - INFO - got response for GET /messages:
+{"email": "ch.lotte@google.com", "unsubscribe": false}

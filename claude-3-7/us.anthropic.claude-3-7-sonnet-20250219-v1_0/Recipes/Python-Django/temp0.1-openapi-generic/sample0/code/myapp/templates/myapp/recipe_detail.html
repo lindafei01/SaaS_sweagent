@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ recipe.title }} - Recipe Sharing App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .recipe-meta {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .rating {
+            color: #f39c12;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .ingredients, .instructions {
+            margin-bottom: 30px;
+        }
+        .ingredients ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .instructions {
+            white-space: pre-line;
+        }
+        .comments {
+            margin-top: 40px;
+        }
+        .comment {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .comment-date {
+            color: #666;
+            font-size: 0.8em;
+        }
+        .api-info {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="/recipes" class="back-link">← Back to Recipes</a>
+    
+    <h1>{{ recipe.title }}</h1>
+    
+    <div class="recipe-meta">
+        {% if avg_rating %}
+            <span class="rating">★ {{ avg_rating|floatformat:1 }}</span>
+        {% else %}
+            <span>No ratings yet</span>
+        {% endif %}
+    </div>
+    
+    <div class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            {% for ingredient in recipe.ingredients %}
+                <li>{{ ingredient }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="instructions">
+        <h2>Instructions</h2>
+        {{ recipe.instructions }}
+    </div>
+    
+    <div class="comments">
+        <h2>Comments</h2>
+        {% if comments %}
+            {% for comment in comments %}
+                <div class="comment">
+                    <p>{{ comment.comment }}</p>
+                    <div class="comment-date">{{ comment.created_at }}</div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No comments yet.</p>
+        {% endif %}
+    </div>
+    
+    <div class="api-info">
+        <h3>API Endpoints for this Recipe</h3>
+        <p>Add a comment: <code>POST /recipes/{{ recipe.id }}/comments</code></p>
+        <p>Add a rating: <code>POST /recipes/{{ recipe.id }}/ratings</code></p>
+    </div>
+</body>
+</html>

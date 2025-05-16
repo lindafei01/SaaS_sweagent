@@ -1,0 +1,32 @@
+2025-05-01 05:13:31,239 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': 'World', 'directory': 'a'}
+2025-05-01 05:13:31,246 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Received 200 response for GET: {"files":["file3.txt","file.txt"]}
+
+2025-05-01 05:13:31,246 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Response contains the correct files.
+2025-05-01 05:13:31,246 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': 'World', 'directory': 'b'}
+2025-05-01 05:13:31,250 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Received 200 response for GET: {"files":["file2.txt"]}
+
+2025-05-01 05:13:31,250 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Response contains the correct files.
+2025-05-01 05:13:31,250 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': 'World', 'directory': 'a', 'recursive': True}
+2025-05-01 05:13:31,254 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Received 200 response for GET: {"files":["file3.txt","file.txt"]}
+
+2025-05-01 05:13:31,254 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Response contains the correct files.
+2025-05-01 05:13:31,254 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': 'World', 'directory': 'b', 'recursive': True}
+2025-05-01 05:13:31,257 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Received 200 response for GET: {"files":["file2.txt"]}
+
+2025-05-01 05:13:31,257 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Response contains the correct files.
+2025-05-01 05:13:31,257 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '.*(World).*', 'recursive': True}
+2025-05-01 05:13:31,261 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Received 200 response for GET: {"files":["b/file2.txt","a/file3.txt","a/file.txt"]}
+
+2025-05-01 05:13:31,261 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Response contains the correct files.
+2025-05-01 05:13:31,261 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': '.*(World).*', 'recursive': False}
+2025-05-01 05:13:31,267 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Received 200 response for GET: {"files":[]}
+
+2025-05-01 05:13:31,267 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Response contains the correct files.
+2025-05-01 05:13:31,267 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': 'Hello.*', 'directory': 'a'}
+2025-05-01 05:13:31,271 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Received 200 response for GET: {"files":["file.txt"]}
+
+2025-05-01 05:13:31,271 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Response contains the correct files.
+2025-05-01 05:13:31,271 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Trying to GET 'http://localhost:12347/search' with params {'regex': 'blue dog', 'directory': 'c/d'}
+2025-05-01 05:13:31,274 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Received 200 response for GET: {"files":["file3.txt"]}
+
+2025-05-01 05:13:31,275 - 7e3d86264bc37628243e9a2b86ed8244f0df3346b5e350c175b9c580b65c04f6 - INFO - Response contains the correct files.

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ recipe.title }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        h1 { color: #333; }
+        .recipe-section { margin-bottom: 20px; }
+        .ingredients-list { list-style: disc; padding-left: 20px; }
+        .instructions { white-space: pre-line; }
+        .rating-section { margin: 20px 0; }
+        .comments-section { margin-top: 30px; }
+        .comment { padding: 10px; border: 1px solid #ddd; margin-bottom: 10px; border-radius: 5px; }
+        form { margin-top: 20px; }
+        input, textarea, button { padding: 8px; margin-bottom: 10px; }
+        .rating-stars { font-size: 24px; }
+        .rating-stars span { cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>{{ recipe.title }}</h1>
+    
+    <div class="recipe-section">
+        <h2>Ingredients</h2>
+        <ul class="ingredients-list">
+            {% for ingredient in recipe.ingredients %}
+            <li>{{ ingredient }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="recipe-section">
+        <h2>Instructions</h2>
+        <div class="instructions">{{ recipe.instructions }}</div>
+    </div>
+    
+    <div class="rating-section">
+        <h2>Rating</h2>
+        {% if recipe.avgRating %}
+        <div>Average Rating: {{ recipe.avgRating }}/5</div>
+        {% else %}
+        <div>No ratings yet</div>
+        {% endif %}
+        
+        <form action="/recipes/{{ recipe.id }}/ratings" method="post">
+            <div class="rating-stars">
+                <span onclick="document.getElementById('rating').value='1'">★</span>
+                <span onclick="document.getElementById('rating').value='2'">★</span>
+                <span onclick="document.getElementById('rating').value='3'">★</span>
+                <span onclick="document.getElementById('rating').value='4'">★</span>
+                <span onclick="document.getElementById('rating').value='5'">★</span>
+            </div>
+            <input type="hidden" id="rating" name="rating" value="5">
+            <button type="submit">Submit Rating</button>
+        </form>
+    </div>
+    
+    <div class="comments-section">
+        <h2>Comments</h2>
+        {% if recipe.comments %}
+            {% for comment_item in recipe.comments %}
+            <div class="comment">{{ comment_item.comment }}</div>
+            {% endfor %}
+        {% else %}
+            <p>No comments yet.</p>
+        {% endif %}
+        
+        <form action="/recipes/{{ recipe.id }}/comments" method="post">
+            <textarea name="comment" rows="4" cols="50" placeholder="Add your comment..."></textarea><br>
+            <button type="submit">Submit Comment</button>
+        </form>
+    </div>
+</body>
+</html>

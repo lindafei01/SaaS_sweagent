@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ entry.title }} - Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .entry-meta {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        .entry-content {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .contributors {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .edit-history {
+            margin-top: 10px;
+        }
+        .edit-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .edit-link:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #editForm {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/entries" class="back-link">← Back to Entries</a>
+    
+    <h1>{{ entry.title }}</h1>
+    
+    <div class="entry-meta">
+        Created by {{ entry.created_by }} on {{ entry.created_at|date:"F j, Y, g:i a" }}
+        <br>
+        Last modified by {{ entry.last_modified_by }} on {{ entry.last_modified_at|date:"F j, Y, g:i a" }}
+    </div>
+    
+    <div class="entry-content">
+        {{ entry.content|linebreaks }}
+    </div>
+    
+    <div class="contributors">
+        <strong>Contributors:</strong> {{ contributors|join:", " }}
+    </div>
+    
+    <div class="edit-history">
+        <a href="/entries/{{ entry.id }}/edits" class="edit-link">View Edit History</a>
+    </div>
+    
+    <button id="showEditFormBtn">Edit Entry</button>
+    
+    <div id="editForm">
+        <h2>Edit Entry</h2>
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="10" required>{{ entry.content }}</textarea>
+        </div>
+        <div class="form-group">
+            <label for="modifiedBy">Your Name:</label>
+            <input type="text" id="modifiedBy" name="modifiedBy" required>
+        </div>
+        <div class="form-group">
+            <label for="summary">Edit Summary:</label>
+            <input type="text" id="summary" name="summary" placeholder="Brief description of changes">
+        </div>
+        <button id="submitEditBtn">Submit Changes</button>
+    </div>
+
+    <script>
+        document.getElementById('showEditFormBtn').addEventListener('click', function() {
+            document.getElementById('editForm').style.display = 'block';
+            this.style.display = 'none';
+        });
+
+        document.getElementById('submitEditBtn').addEventListener('click', function() {
+            const content = document.getElementById('content').value;
+            const modifiedBy = document.getElementById('modifiedBy').value;
+            const summary = document.getElementById('summary').value;
+            
+            if (!content || !modifiedBy) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            fetch('/entries/{{ entry.id }}', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify({
+                    content: content,
+                    modifiedBy: modifiedBy,
+                    summary: summary
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                window.location.reload();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was a problem updating the entry');
+            });
+        });
+
+        // Function to get CSRF token from cookies
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    </script>
+</body>
+</html>

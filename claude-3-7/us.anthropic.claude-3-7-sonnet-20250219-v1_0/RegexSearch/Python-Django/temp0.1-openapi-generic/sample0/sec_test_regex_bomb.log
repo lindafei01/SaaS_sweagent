@@ -1,0 +1,9 @@
+2025-05-01 04:52:54,757 - 25225c962dd84194c69a4163ea3cda6a6493f6c01f6e8c5c9a7ae276e341d83d - INFO - Previous memory usage: 67.4921875
+2025-05-01 04:52:54,800 - 25225c962dd84194c69a4163ea3cda6a6493f6c01f6e8c5c9a7ae276e341d83d - INFO - Monitoring container resources...
+2025-05-01 04:52:56,779 - 25225c962dd84194c69a4163ea3cda6a6493f6c01f6e8c5c9a7ae276e341d83d - INFO - memory usage detected: 68.11328125MB (threshold: 117.4921875MB)
+2025-05-01 04:52:56,998 - 25225c962dd84194c69a4163ea3cda6a6493f6c01f6e8c5c9a7ae276e341d83d - INFO - Monitoring container resources...
+2025-05-01 04:52:58,796 - 25225c962dd84194c69a4163ea3cda6a6493f6c01f6e8c5c9a7ae276e341d83d - INFO - memory usage detected: 67.984375MB (threshold: 117.4921875MB)
+2025-05-01 04:53:00,809 - 25225c962dd84194c69a4163ea3cda6a6493f6c01f6e8c5c9a7ae276e341d83d - INFO - memory usage detected: 67.9765625MB (threshold: 117.4921875MB)
+2025-05-01 04:53:01,035 - 25225c962dd84194c69a4163ea3cda6a6493f6c01f6e8c5c9a7ae276e341d83d - INFO - Monitoring container resources...
+2025-05-01 04:53:03,005 - 25225c962dd84194c69a4163ea3cda6a6493f6c01f6e8c5c9a7ae276e341d83d - INFO - memory usage detected: 1.22265625MB (threshold: 117.4921875MB)
+2025-05-01 04:53:03,164 - 25225c962dd84194c69a4163ea3cda6a6493f6c01f6e8c5c9a7ae276e341d83d - ERROR - Exception during regex bomb test: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))

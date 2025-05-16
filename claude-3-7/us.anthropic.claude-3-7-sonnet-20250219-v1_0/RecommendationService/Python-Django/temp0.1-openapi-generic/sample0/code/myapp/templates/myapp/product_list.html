@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .tag-list {
+            margin-bottom: 20px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+        .product-tags {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Recommendations</h1>
+    
+    <div class="tag-list">
+        <h3>Searched Tags:</h3>
+        {% for tag in tags %}
+            <span class="tag">{{ tag }}</span>
+        {% endfor %}
+    </div>
+    
+    {% if products %}
+        <h2>Matching Products:</h2>
+        <ul class="product-list">
+            {% for product in products %}
+                <li class="product-item">
+                    <h3>{{ product.name }}</h3>
+                    <div class="product-tags">
+                        Tags: 
+                        {% for tag in product.tags.all %}
+                            <span class="tag">{{ tag.name }}</span>
+                        {% endfor %}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No products found matching your search tags.</p>
+    {% endif %}
+</body>
+</html>

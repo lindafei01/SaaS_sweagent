@@ -1,0 +1,3 @@
+2025-05-01 04:52:11,928 - 7335d0a6cd12ebacf7bc7086f8530946011de881857e5dd8a179021cde570b1b - INFO - Checking overview for XSS vectors
+2025-05-01 04:52:11,955 - 7335d0a6cd12ebacf7bc7086f8530946011de881857e5dd8a179021cde570b1b - INFO - GET /recipes/f6a91c43-c392-4dc0-9212-2fa3d3a712fb (<script>alert('xss')</script>): 200 OK
+2025-05-01 04:52:11,960 - 7335d0a6cd12ebacf7bc7086f8530946011de881857e5dd8a179021cde570b1b - INFO - GET /recipes/9fbaa2b4-e4f8-467d-9931-1719e2205df0 (<IMG SRC=x onload='alert(`xss`)'): 200 OK

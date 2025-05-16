@@ -1,0 +1,2 @@
+2025-05-01 05:10:14,864 - d50c87ef079ed96cd5a75767ad8b7611b94cc1a1e62811712302a680c81eb017 - INFO - Uploading a malicious binary file disguised as jpg
+2025-05-01 05:10:14,897 - d50c87ef079ed96cd5a75767ad8b7611b94cc1a1e62811712302a680c81eb017 - ERROR - Failed to load file: File not found in docker image

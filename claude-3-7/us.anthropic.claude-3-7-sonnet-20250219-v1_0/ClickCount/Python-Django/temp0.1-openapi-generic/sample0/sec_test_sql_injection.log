@@ -1,0 +1,25 @@
+2025-05-01 04:47:11,098 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - click registration succeeded
+2025-05-01 04:47:11,293 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - tried params: {'date': "= '' UNION SELECT password FROM users WHERE id = 1; --", 'direction': '<'} response: {"error": "Invalid date format. Use YYYY-MM-DD"}
+2025-05-01 04:47:11,373 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:47:11,379 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - tried params: {'date': '1970-01-01', 'direction': "= '' UNION SELECT password FROM users WHERE id = 1; --"} response: {"error": "Direction must be one of <, >, <=, >="}
+2025-05-01 04:47:11,453 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:47:11,460 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - tried params: {'date': "' UNION SELECT password FROM users WHERE id = 1; --", 'direction': '<'} response: {"error": "Invalid date format. Use YYYY-MM-DD"}
+2025-05-01 04:47:11,531 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:47:11,536 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - tried params: {'date': '1970-01-01', 'direction': "' UNION SELECT password FROM users WHERE id = 1; --"} response: {"error": "Direction must be one of <, >, <=, >="}
+2025-05-01 04:47:11,590 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:47:11,595 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - tried params: {'date': "= ''; drop table users; --", 'direction': '<'} response: {"error": "Invalid date format. Use YYYY-MM-DD"}
+2025-05-01 04:47:11,667 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:47:11,673 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - tried params: {'date': '1970-01-01', 'direction': "= ''; drop table users; --"} response: {"error": "Direction must be one of <, >, <=, >="}
+2025-05-01 04:47:11,740 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:47:11,745 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - tried params: {'date': "'; drop table users; --", 'direction': '<'} response: {"error": "Invalid date format. Use YYYY-MM-DD"}
+2025-05-01 04:47:11,816 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+
+2025-05-01 04:47:11,821 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - tried params: {'date': '1970-01-01', 'direction': "'; drop table users; --"} response: {"error": "Direction must be one of <, >, <=, >="}
+2025-05-01 04:47:11,877 - a68d062f103812be3532fa71cdfad07132b41221617a457b7f1c13559d707e0c - INFO - got output for users table: 1|s3cr3t_l33t_p@ssword
+

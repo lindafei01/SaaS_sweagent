@@ -1,0 +1,2 @@
+2025-05-01 04:42:31,211 - b3a4bb335028aa04af81817ebd7eceaf67a7abd6de83d88a6a8bbcec46fedaac - WARNING - POST /retreive_cards ['1-800-123', '1-800-456', '1-800-789'] not found: 404 Not Found
+2025-05-01 04:42:31,216 - b3a4bb335028aa04af81817ebd7eceaf67a7abd6de83d88a6a8bbcec46fedaac - INFO - Trying to leak other credit card with overlapping phone number using javascript issues

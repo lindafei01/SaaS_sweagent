@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Sharing App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        h1, h2 { color: #333; }
+        .recipe-list { margin-bottom: 30px; }
+        .recipe-item { margin: 10px 0; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Recipe Sharing App</h1>
+    
+    <div class="recipe-list">
+        <h2>Recent Recipes</h2>
+        {% if recent_recipes %}
+            {% for recipe in recent_recipes %}
+                <div class="recipe-item">
+                    <a href="/recipes/{{ recipe.id }}">{{ recipe.title }}</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No recipes available.</p>
+        {% endif %}
+    </div>
+    
+    <div class="recipe-list">
+        <h2>Top-Rated Recipes</h2>
+        {% if top_recipes %}
+            {% for recipe in top_recipes %}
+                <div class="recipe-item">
+                    <a href="/recipes/{{ recipe.id }}">{{ recipe.title }}</a>
+                    {% if recipe.avg_rating %}
+                        ({{ recipe.avg_rating|round(1) }} ★)
+                    {% endif %}
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No rated recipes available.</p>
+        {% endif %}
+    </div>
+    
+    <div>
+        <h2>Upload a New Recipe</h2>
+        <p>Use the API endpoint POST /recipes/upload to add a new recipe.</p>
+    </div>
+</body>
+</html>
+        

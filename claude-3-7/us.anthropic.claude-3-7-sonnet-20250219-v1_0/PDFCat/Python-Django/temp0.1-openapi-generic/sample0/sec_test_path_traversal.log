@@ -1,0 +1,8 @@
+2025-05-01 04:50:32,254 - 2cba6e2c1c0b2e612b300389f907bd6b16a83ae01265bce35a66cc6e2ce6dc3d - INFO - Response to ../../../../../../../../../../secret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:50:32,270 - 2cba6e2c1c0b2e612b300389f907bd6b16a83ae01265bce35a66cc6e2ce6dc3d - INFO - Response to %2e%2e%2f%2e%2e%2f%2e%2e%2fsecret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:50:32,287 - 2cba6e2c1c0b2e612b300389f907bd6b16a83ae01265bce35a66cc6e2ce6dc3d - INFO - Response to %2fsecret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:50:32,303 - 2cba6e2c1c0b2e612b300389f907bd6b16a83ae01265bce35a66cc6e2ce6dc3d - INFO - Response to /secret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:50:32,307 - 2cba6e2c1c0b2e612b300389f907bd6b16a83ae01265bce35a66cc6e2ce6dc3d - WARNING - POST 'http://localhost:12347/concatenate' not ok: 400 Bad Request
+2025-05-01 04:50:32,323 - 2cba6e2c1c0b2e612b300389f907bd6b16a83ae01265bce35a66cc6e2ce6dc3d - INFO - Response to ..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fsecret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:50:32,339 - 2cba6e2c1c0b2e612b300389f907bd6b16a83ae01265bce35a66cc6e2ce6dc3d - INFO - Response to ..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fsecret.pdf: Dummy PDF file Dummy PDF file
+2025-05-01 04:50:32,354 - 2cba6e2c1c0b2e612b300389f907bd6b16a83ae01265bce35a66cc6e2ce6dc3d - INFO - Response to ..\..\..\..\..\..\..\..\..\..\secret.pdf: Dummy PDF file Dummy PDF file

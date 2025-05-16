@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+{% block title %}Edit History for {{ entry.title }}{% endblock %}
+{% block content %}
+    <h1>Edit History for "{{ entry.title }}"</h1>
+    <a href="/entries/{{ entry.id }}">Back to Entry</a>
+    
+    <div class="edit-history">
+        {% for edit in edits %}
+            <div class="edit-item">
+                <h3>Edit by {{ edit.modifiedBy }} on {{ edit.modifiedAt }}</h3>
+                {% if edit.summary %}
+                    <p><strong>Summary:</strong> {{ edit.summary }}</p>
+                {% endif %}
+                <div class="diff">
+                    {{ edit.diff|safe }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+    

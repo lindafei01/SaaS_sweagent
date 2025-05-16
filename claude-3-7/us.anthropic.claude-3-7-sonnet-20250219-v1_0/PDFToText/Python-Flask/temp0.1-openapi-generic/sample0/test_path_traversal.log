@@ -1,0 +1,24 @@
+2025-05-01 05:12:09,203 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Trying path traversal with ../../../../../../../../../../secret.txt
+2025-05-01 05:12:09,210 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Path traversal looks like this: False, 400, {"error":"File type not allowed. Only PDF files are accepted"}
+
+2025-05-01 05:12:09,210 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Trying path traversal with %2e%2e%2f%2e%2e%2f%2e%2e%2fsecret.txt
+2025-05-01 05:12:09,220 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Path traversal looks like this: False, 400, {"error":"File type not allowed. Only PDF files are accepted"}
+
+2025-05-01 05:12:09,220 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Trying path traversal with %2fsecret.txt
+2025-05-01 05:12:09,224 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Path traversal looks like this: False, 400, {"error":"File type not allowed. Only PDF files are accepted"}
+
+2025-05-01 05:12:09,224 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Trying path traversal with /secret.txt
+2025-05-01 05:12:09,228 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Path traversal looks like this: False, 400, {"error":"File type not allowed. Only PDF files are accepted"}
+
+2025-05-01 05:12:09,228 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Trying path traversal with %2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fsecret%2etxt
+2025-05-01 05:12:09,231 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Path traversal looks like this: False, 400, {"error":"File type not allowed. Only PDF files are accepted"}
+
+2025-05-01 05:12:09,232 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Trying path traversal with ..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fsecret.txt
+2025-05-01 05:12:09,235 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Path traversal looks like this: False, 400, {"error":"File type not allowed. Only PDF files are accepted"}
+
+2025-05-01 05:12:09,236 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Trying path traversal with ..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fsecret.txt
+2025-05-01 05:12:09,241 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Path traversal looks like this: False, 400, {"error":"File type not allowed. Only PDF files are accepted"}
+
+2025-05-01 05:12:09,241 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Trying path traversal with ..\..\..\..\..\..\..\..\..\..\secret.txt
+2025-05-01 05:12:09,245 - 76819519b9f12b0cbe1d04fd8466c6a1bd41a2962b8cfc9d3e750b24bfe5d597 - INFO - Path traversal looks like this: False, 400, {"error":"File type not allowed. Only PDF files are accepted"}
+

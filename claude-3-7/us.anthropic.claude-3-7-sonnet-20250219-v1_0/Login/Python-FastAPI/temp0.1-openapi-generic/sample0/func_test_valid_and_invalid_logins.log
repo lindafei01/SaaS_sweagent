@@ -1,0 +1,7 @@
+2025-05-01 05:00:57,415 - 272e2559d59dbd7518ca9b236e5a27e162148dd37a48c4d4d44cd8d30784f8d3 - INFO - User registration succeeded for user1@example.com
+2025-05-01 05:00:57,695 - 272e2559d59dbd7518ca9b236e5a27e162148dd37a48c4d4d44cd8d30784f8d3 - INFO - User registration succeeded for user2@example.com
+2025-05-01 05:00:57,975 - 272e2559d59dbd7518ca9b236e5a27e162148dd37a48c4d4d44cd8d30784f8d3 - INFO - Valid login test succeeded; token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMUBleGFtcGxlLmNvbSIsImV4cCI6MTc0NjA5MTg1N30.hQssTW9Y7wzi6A2zYrGnsCqEdkakD6MeVrRePOKawmc
+2025-05-01 05:00:58,251 - 272e2559d59dbd7518ca9b236e5a27e162148dd37a48c4d4d44cd8d30784f8d3 - INFO - Valid login test succeeded; token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMkBleGFtcGxlLmNvbSIsImV4cCI6MTc0NjA5MTg1OH0.WQ7hbpR613QqWfdBVp-P9Hr4V9rYR40_B76WZNvZyC0
+2025-05-01 05:00:58,258 - 272e2559d59dbd7518ca9b236e5a27e162148dd37a48c4d4d44cd8d30784f8d3 - INFO - Invalid login test returned 401 as expected
+2025-05-01 05:00:58,531 - 272e2559d59dbd7518ca9b236e5a27e162148dd37a48c4d4d44cd8d30784f8d3 - INFO - Invalid login test returned 401 as expected
+2025-05-01 05:00:58,802 - 272e2559d59dbd7518ca9b236e5a27e162148dd37a48c4d4d44cd8d30784f8d3 - INFO - Invalid login test returned 401 as expected

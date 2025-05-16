@@ -1,0 +1,130 @@
+2025-05-01 05:14:33,446 - 5861798c205c53b46bcf66a0e06914a1b3d50799325fce8a3e57f527daec0897 - INFO - User registration succeeded for merchant1@example.com
+2025-05-01 05:14:33,463 - 5861798c205c53b46bcf66a0e06914a1b3d50799325fce8a3e57f527daec0897 - INFO - tried login for user: merchant1@example.com, got status=200 cookies=<RequestsCookieJar[<Cookie AUTH_COOKIE=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1lcmNoYW50MUBleGFtcGxlLmNvbSIsImV4cCI6MTc0NjE3NzI3M30.xNdi01XkvEW4sPV73M2casNpVJ2FQixAHvcR0wYi6Gs for localhost.local/>]>
+2025-05-01 05:14:33,469 - 5861798c205c53b46bcf66a0e06914a1b3d50799325fce8a3e57f527daec0897 - INFO - got response for uploading wares=
+"<script>alert('xss')</script>","description",1.0
+"name","<script>alert('xss')</script>",2.0
+
+ status_code=200 text={"message":"Wares uploaded successfully"}
+
+2025-05-01 05:14:33,477 - 5861798c205c53b46bcf66a0e06914a1b3d50799325fce8a3e57f527daec0897 - INFO - got response from GET /wares params={} status=200 text=
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Available Wares</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Available Wares</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Merchant</th>
+            </tr>
+            
+            <tr>
+                <td>&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</td>
+                <td>description</td>
+                <td>$1.00</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>name</td>
+                <td>&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</td>
+                <td>$2.00</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+        </table>
+    </body>
+    </html>
+    
+2025-05-01 05:14:33,483 - 5861798c205c53b46bcf66a0e06914a1b3d50799325fce8a3e57f527daec0897 - INFO - got response for uploading wares=
+"<IMG SRC=x onload='alert(`xss`)'","description",1.0
+"name","<IMG SRC=x onload='alert(`xss`)'",2.0
+
+ status_code=200 text={"message":"Wares uploaded successfully"}
+
+2025-05-01 05:14:33,489 - 5861798c205c53b46bcf66a0e06914a1b3d50799325fce8a3e57f527daec0897 - INFO - got response from GET /wares params={} status=200 text=
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Available Wares</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Available Wares</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Merchant</th>
+            </tr>
+            
+            <tr>
+                <td>&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</td>
+                <td>description</td>
+                <td>$1.00</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>name</td>
+                <td>&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</td>
+                <td>$2.00</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>&lt;IMG SRC=x onload=&#39;alert(`xss`)&#39;</td>
+                <td>description</td>
+                <td>$1.00</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+            <tr>
+                <td>name</td>
+                <td>&lt;IMG SRC=x onload=&#39;alert(`xss`)&#39;</td>
+                <td>$2.00</td>
+                <td>merchant1@example.com</td>
+            </tr>
+            
+        </table>
+    </body>
+    </html>
+    

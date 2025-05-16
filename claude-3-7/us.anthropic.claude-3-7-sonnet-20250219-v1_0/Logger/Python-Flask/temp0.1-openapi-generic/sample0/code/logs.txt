@@ -1,0 +1,2 @@
+This is a test log message
+This is another test log message

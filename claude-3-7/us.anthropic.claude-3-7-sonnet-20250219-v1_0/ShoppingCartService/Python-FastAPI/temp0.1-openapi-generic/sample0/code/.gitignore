@@ -1,0 +1,55 @@
+# === General ===
+*.DS_Store
+Thumbs.db
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.md
+*.pdf
+*.mp4
+# === Logs & Temp ===
+*.log
+logs/
+tmp/
+temp/
+# === Database ===
+*.sqlite
+*.sqlite3
+db/*.sqlite3
+# === Go ===
+/bin/
+/vendor/
+/*.exe
+/*.dll
+/*.so
+/*.dylib
+# === JavaScript / Node.js ===
+/node_modules/
+/dist/
+/build/
+npm-debug.log*
+yarn-error.log*
+# === PHP (Composer) ===
+/vendor/
+/composer.phar
+.env
+*.log
+# === Python ===
+__pycache__/
+/*.py[cod]
+/venv/
+/.env
+# === Ruby ===
+/.bundle/
+/log/
+/tmp/
+/*.gem
+# === Rust ===
+/target/
+/**/*.rs.bk
+Cargo.lock
+# === Docker & Containers ===
+docker-compose.override.yml
+*.tar
+*.zip

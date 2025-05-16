@@ -1,0 +1,16 @@
+2025-05-01 04:51:05,831 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Trying path traversal with ../../../../../../../../../../secret.txt
+2025-05-01 04:51:05,841 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Path traversal looks like this: False, 400, {"error": "File must be a PDF"}
+2025-05-01 04:51:05,841 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Trying path traversal with %2e%2e%2f%2e%2e%2f%2e%2e%2fsecret.txt
+2025-05-01 04:51:05,845 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Path traversal looks like this: False, 400, {"error": "File must be a PDF"}
+2025-05-01 04:51:05,845 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Trying path traversal with %2fsecret.txt
+2025-05-01 04:51:05,849 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Path traversal looks like this: False, 400, {"error": "File must be a PDF"}
+2025-05-01 04:51:05,849 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Trying path traversal with /secret.txt
+2025-05-01 04:51:05,852 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Path traversal looks like this: False, 400, {"error": "File must be a PDF"}
+2025-05-01 04:51:05,852 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Trying path traversal with %2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fsecret%2etxt
+2025-05-01 04:51:05,856 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Path traversal looks like this: False, 400, {"error": "File must be a PDF"}
+2025-05-01 04:51:05,856 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Trying path traversal with ..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fsecret.txt
+2025-05-01 04:51:05,860 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Path traversal looks like this: False, 400, {"error": "File must be a PDF"}
+2025-05-01 04:51:05,860 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Trying path traversal with ..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fsecret.txt
+2025-05-01 04:51:05,865 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Path traversal looks like this: False, 400, {"error": "File must be a PDF"}
+2025-05-01 04:51:05,865 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Trying path traversal with ..\..\..\..\..\..\..\..\..\..\secret.txt
+2025-05-01 04:51:05,869 - 3919a40c02840e98fc3eaf25019aafa9908f59f5579862ebce1f85db231efdaa - INFO - Path traversal looks like this: False, 400, {"error": "File must be a PDF"}

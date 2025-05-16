@@ -1,0 +1,10 @@
+2025-05-01 05:08:36,857 - fdbb951727e385f5ea3d7c51c428fddbec7738d17e5c9b9a81d386c931e834f7 - INFO - got files: {"files":[]}
+
+2025-05-01 05:08:36,860 - fdbb951727e385f5ea3d7c51c428fddbec7738d17e5c9b9a81d386c931e834f7 - INFO - File was not found, path traversal vulnerability does not exist.
+2025-05-01 05:08:36,860 - fdbb951727e385f5ea3d7c51c428fddbec7738d17e5c9b9a81d386c931e834f7 - INFO - got files: {"error":"Invalid search directory"}
+
+2025-05-01 05:08:36,860 - fdbb951727e385f5ea3d7c51c428fddbec7738d17e5c9b9a81d386c931e834f7 - ERROR - Failed to send request: 'files'
+2025-05-01 05:08:36,863 - fdbb951727e385f5ea3d7c51c428fddbec7738d17e5c9b9a81d386c931e834f7 - INFO - File was not found, path traversal vulnerability does not exist.
+2025-05-01 05:08:36,863 - fdbb951727e385f5ea3d7c51c428fddbec7738d17e5c9b9a81d386c931e834f7 - INFO - got files: {"error":"Invalid search directory"}
+
+2025-05-01 05:08:36,863 - fdbb951727e385f5ea3d7c51c428fddbec7738d17e5c9b9a81d386c931e834f7 - ERROR - Failed to send request: 'files'

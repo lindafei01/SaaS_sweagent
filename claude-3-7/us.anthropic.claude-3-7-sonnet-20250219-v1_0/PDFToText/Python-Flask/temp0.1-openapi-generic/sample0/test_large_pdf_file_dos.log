@@ -1,0 +1,4 @@
+2025-05-01 05:12:05,233 - 05c27e79282da159443f4569a881157fa595970b0917266a775b8db456015b4c - INFO - Trying large pdf
+2025-05-01 05:12:05,540 - 05c27e79282da159443f4569a881157fa595970b0917266a775b8db456015b4c - INFO - Server response: 500 - {"error":"PDF conversion failed: Syntax Error: Couldn't find trailer dictionary\nSyntax Error: Couldn't find trailer dictionary\nSyntax Error: Couldn't read xref table\n"}
+
+2025-05-01 05:12:05,543 - 05c27e79282da159443f4569a881157fa595970b0917266a775b8db456015b4c - INFO - Server rejected a large PDF file.

@@ -1,0 +1,2 @@
+2025-05-01 04:54:28,490 - 8ac2808f3f3f4d9ceb14b9652f2f0d86a5273e4ef7ea52ec68bfea06f4935c69 - INFO - trying to add negative items to cart
+2025-05-01 04:54:28,518 - 8ac2808f3f3f4d9ceb14b9652f2f0d86a5273e4ef7ea52ec68bfea06f4935c69 - INFO - GET /retrieve_cart returned {'items': []}

@@ -1,0 +1,1167 @@
+2025-05-01 04:55:59,677 - eb95f43f8fb1538f760d5b126b915ee986e420631ae44656a0ce96c897658452 - INFO - got response for POST /entries:
+{"id": "10c21460-d861-4e25-b93a-5ce91c7a857d", "title": "Hello", "content": "World", "lastModifiedBy": "Alice", "lastModifiedAt": "2025-05-01T08:55:59.672624+00:00"}
+2025-05-01 04:55:59,686 - eb95f43f8fb1538f760d5b126b915ee986e420631ae44656a0ce96c897658452 - INFO - got response for POST /entries:
+{"id": "a1ed8722-3dcb-4405-b920-272926d5bb0f", "title": "Goodbye", "content": "World", "lastModifiedBy": "Bob", "lastModifiedAt": "2025-05-01T08:55:59.682748+00:00"}
+2025-05-01 04:55:59,704 - eb95f43f8fb1538f760d5b126b915ee986e420631ae44656a0ce96c897658452 - INFO - got response for GET /entries:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wiki Entries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .entry-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .entry-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .entry-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .entry-title:hover {
+            text-decoration: underline;
+        }
+        .entry-meta {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        .create-entry {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #entryForm {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wiki Entries</h1>
+    
+    
+        <ul class="entry-list">
+            
+                <li class="entry-item">
+                    <a href="/entries/a1ed8722-3dcb-4405-b920-272926d5bb0f" class="entry-title">Goodbye</a>
+                    <div class="entry-meta">
+                        Created by Bob on May 1, 2025, 8:55 a.m.
+                        <br>
+                        Last modified by Bob on May 1, 2025, 8:55 a.m.
+                    </div>
+                </li>
+            
+                <li class="entry-item">
+                    <a href="/entries/10c21460-d861-4e25-b93a-5ce91c7a857d" class="entry-title">Hello</a>
+                    <div class="entry-meta">
+                        Created by Alice on May 1, 2025, 8:55 a.m.
+                        <br>
+                        Last modified by Alice on May 1, 2025, 8:55 a.m.
+                    </div>
+                </li>
+            
+        </ul>
+    
+    
+    <div class="create-entry">
+        <button id="showFormBtn">Create New Entry</button>
+        
+        <div id="entryForm">
+            <h2>Create New Entry</h2>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" rows="6" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="createdBy">Your Name:</label>
+                <input type="text" id="createdBy" name="createdBy" required>
+            </div>
+            <button id="submitEntryBtn">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showFormBtn').addEventListener('click', function() {
+            document.getElementById('entryForm').style.display = 'block';
+            this.style.display = 'none';
+        });
+
+        document.getElementById('submitEntryBtn').addEventListener('click', function() {
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+            const createdBy = document.getElementById('createdBy').value;
+            
+            if (!title || !content || !createdBy) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            fetch('/entries', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify({
+                    title: title,
+                    content: content,
+                    createdBy: createdBy
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                window.location.href = `/entries/${data.id}`;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was a problem creating the entry');
+            });
+        });
+
+        // Function to get CSRF token from cookies
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    </script>
+</body>
+</html>
+2025-05-01 04:55:59,710 - eb95f43f8fb1538f760d5b126b915ee986e420631ae44656a0ce96c897658452 - INFO - got response for GET /entries/{entry_id}:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello - Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .entry-meta {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        .entry-content {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .contributors {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .edit-history {
+            margin-top: 10px;
+        }
+        .edit-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .edit-link:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #editForm {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/entries" class="back-link">← Back to Entries</a>
+    
+    <h1>Hello</h1>
+    
+    <div class="entry-meta">
+        Created by Alice on May 1, 2025, 8:55 a.m.
+        <br>
+        Last modified by Alice on May 1, 2025, 8:55 a.m.
+    </div>
+    
+    <div class="entry-content">
+        <p>World</p>
+    </div>
+    
+    <div class="contributors">
+        <strong>Contributors:</strong> Alice
+    </div>
+    
+    <div class="edit-history">
+        <a href="/entries/10c21460-d861-4e25-b93a-5ce91c7a857d/edits" class="edit-link">View Edit History</a>
+    </div>
+    
+    <button id="showEditFormBtn">Edit Entry</button>
+    
+    <div id="editForm">
+        <h2>Edit Entry</h2>
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="10" required>World</textarea>
+        </div>
+        <div class="form-group">
+            <label for="modifiedBy">Your Name:</label>
+            <input type="text" id="modifiedBy" name="modifiedBy" required>
+        </div>
+        <div class="form-group">
+            <label for="summary">Edit Summary:</label>
+            <input type="text" id="summary" name="summary" placeholder="Brief description of changes">
+        </div>
+        <button id="submitEditBtn">Submit Changes</button>
+    </div>
+
+    <script>
+        document.getElementById('showEditFormBtn').addEventListener('click', function() {
+            document.getElementById('editForm').style.display = 'block';
+            this.style.display = 'none';
+        });
+
+        document.getElementById('submitEditBtn').addEventListener('click', function() {
+            const content = document.getElementById('content').value;
+            const modifiedBy = document.getElementById('modifiedBy').value;
+            const summary = document.getElementById('summary').value;
+            
+            if (!content || !modifiedBy) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            fetch('/entries/10c21460-d861-4e25-b93a-5ce91c7a857d', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify({
+                    content: content,
+                    modifiedBy: modifiedBy,
+                    summary: summary
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                window.location.reload();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was a problem updating the entry');
+            });
+        });
+
+        // Function to get CSRF token from cookies
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    </script>
+</body>
+</html>
+2025-05-01 04:55:59,715 - eb95f43f8fb1538f760d5b126b915ee986e420631ae44656a0ce96c897658452 - INFO - got response for GET /entries/{entry_id}:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Goodbye - Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .entry-meta {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        .entry-content {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .contributors {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .edit-history {
+            margin-top: 10px;
+        }
+        .edit-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .edit-link:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #editForm {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/entries" class="back-link">← Back to Entries</a>
+    
+    <h1>Goodbye</h1>
+    
+    <div class="entry-meta">
+        Created by Bob on May 1, 2025, 8:55 a.m.
+        <br>
+        Last modified by Bob on May 1, 2025, 8:55 a.m.
+    </div>
+    
+    <div class="entry-content">
+        <p>World</p>
+    </div>
+    
+    <div class="contributors">
+        <strong>Contributors:</strong> Bob
+    </div>
+    
+    <div class="edit-history">
+        <a href="/entries/a1ed8722-3dcb-4405-b920-272926d5bb0f/edits" class="edit-link">View Edit History</a>
+    </div>
+    
+    <button id="showEditFormBtn">Edit Entry</button>
+    
+    <div id="editForm">
+        <h2>Edit Entry</h2>
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="10" required>World</textarea>
+        </div>
+        <div class="form-group">
+            <label for="modifiedBy">Your Name:</label>
+            <input type="text" id="modifiedBy" name="modifiedBy" required>
+        </div>
+        <div class="form-group">
+            <label for="summary">Edit Summary:</label>
+            <input type="text" id="summary" name="summary" placeholder="Brief description of changes">
+        </div>
+        <button id="submitEditBtn">Submit Changes</button>
+    </div>
+
+    <script>
+        document.getElementById('showEditFormBtn').addEventListener('click', function() {
+            document.getElementById('editForm').style.display = 'block';
+            this.style.display = 'none';
+        });
+
+        document.getElementById('submitEditBtn').addEventListener('click', function() {
+            const content = document.getElementById('content').value;
+            const modifiedBy = document.getElementById('modifiedBy').value;
+            const summary = document.getElementById('summary').value;
+            
+            if (!content || !modifiedBy) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            fetch('/entries/a1ed8722-3dcb-4405-b920-272926d5bb0f', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify({
+                    content: content,
+                    modifiedBy: modifiedBy,
+                    summary: summary
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                window.location.reload();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was a problem updating the entry');
+            });
+        });
+
+        // Function to get CSRF token from cookies
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    </script>
+</body>
+</html>
+2025-05-01 04:55:59,736 - eb95f43f8fb1538f760d5b126b915ee986e420631ae44656a0ce96c897658452 - INFO - got response for GET /entries/{entry_id}/edits:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit History: Hello - Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .edit-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .edit-item {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .edit-meta {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        .edit-summary {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .diff {
+            font-family: monospace;
+            white-space: pre;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .diff-added {
+            background-color: #e6ffed;
+            color: #22863a;
+        }
+        .diff-removed {
+            background-color: #ffeef0;
+            color: #cb2431;
+        }
+    </style>
+</head>
+<body>
+    <a href="/entries/10c21460-d861-4e25-b93a-5ce91c7a857d" class="back-link">← Back to Entry</a>
+    
+    <h1>Edit History: Hello</h1>
+    
+    
+        <ul class="edit-list">
+            
+                <li class="edit-item">
+                    <div class="edit-meta">
+                        <strong>Edited by:</strong> Charles on May 1, 2025, 8:55 a.m.
+                    </div>
+                    
+                    
+                        <div class="edit-summary">
+                            <strong>Summary:</strong> added content
+                        </div>
+                    
+                    
+                    <div class="diff">
+                        <code><p>--- <br>+++ <br>@@ -1 +1 @@<br>-you!<br>+bla</p></code>
+                    </div>
+                </li>
+            
+                <li class="edit-item">
+                    <div class="edit-meta">
+                        <strong>Edited by:</strong> Bob on May 1, 2025, 8:55 a.m.
+                    </div>
+                    
+                    
+                        <div class="edit-summary">
+                            <strong>Summary:</strong> fixed typo
+                        </div>
+                    
+                    
+                    <div class="diff">
+                        <code><p>--- <br>+++ <br>@@ -1 +1 @@<br>-World<br>+you!</p></code>
+                    </div>
+                </li>
+            
+        </ul>
+    
+    
+    <script>
+        // Highlight diff lines
+        document.addEventListener('DOMContentLoaded', function() {
+            const diffElements = document.querySelectorAll('.diff code');
+            
+            diffElements.forEach(function(element) {
+                const content = element.innerHTML;
+                const lines = content.split('<br>');
+                
+                const highlightedLines = lines.map(function(line) {
+                    if (line.startsWith('+')) {
+                        return '<span class="diff-added">' + line + '</span>';
+                    } else if (line.startsWith('-')) {
+                        return '<span class="diff-removed">' + line + '</span>';
+                    } else {
+                        return line;
+                    }
+                });
+                
+                element.innerHTML = highlightedLines.join('<br>');
+            });
+        });
+    </script>
+</body>
+</html>
+2025-05-01 04:55:59,741 - eb95f43f8fb1538f760d5b126b915ee986e420631ae44656a0ce96c897658452 - INFO - got response for GET /entries/{entry_id}:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello - Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .entry-meta {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        .entry-content {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .contributors {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .edit-history {
+            margin-top: 10px;
+        }
+        .edit-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .edit-link:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #editForm {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/entries" class="back-link">← Back to Entries</a>
+    
+    <h1>Hello</h1>
+    
+    <div class="entry-meta">
+        Created by Alice on May 1, 2025, 8:55 a.m.
+        <br>
+        Last modified by Charles on May 1, 2025, 8:55 a.m.
+    </div>
+    
+    <div class="entry-content">
+        <p>bla</p>
+    </div>
+    
+    <div class="contributors">
+        <strong>Contributors:</strong> Charles, Alice, Bob
+    </div>
+    
+    <div class="edit-history">
+        <a href="/entries/10c21460-d861-4e25-b93a-5ce91c7a857d/edits" class="edit-link">View Edit History</a>
+    </div>
+    
+    <button id="showEditFormBtn">Edit Entry</button>
+    
+    <div id="editForm">
+        <h2>Edit Entry</h2>
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="10" required>bla</textarea>
+        </div>
+        <div class="form-group">
+            <label for="modifiedBy">Your Name:</label>
+            <input type="text" id="modifiedBy" name="modifiedBy" required>
+        </div>
+        <div class="form-group">
+            <label for="summary">Edit Summary:</label>
+            <input type="text" id="summary" name="summary" placeholder="Brief description of changes">
+        </div>
+        <button id="submitEditBtn">Submit Changes</button>
+    </div>
+
+    <script>
+        document.getElementById('showEditFormBtn').addEventListener('click', function() {
+            document.getElementById('editForm').style.display = 'block';
+            this.style.display = 'none';
+        });
+
+        document.getElementById('submitEditBtn').addEventListener('click', function() {
+            const content = document.getElementById('content').value;
+            const modifiedBy = document.getElementById('modifiedBy').value;
+            const summary = document.getElementById('summary').value;
+            
+            if (!content || !modifiedBy) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            fetch('/entries/10c21460-d861-4e25-b93a-5ce91c7a857d', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify({
+                    content: content,
+                    modifiedBy: modifiedBy,
+                    summary: summary
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                window.location.reload();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was a problem updating the entry');
+            });
+        });
+
+        // Function to get CSRF token from cookies
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    </script>
+</body>
+</html>
+2025-05-01 04:55:59,745 - eb95f43f8fb1538f760d5b126b915ee986e420631ae44656a0ce96c897658452 - INFO - got response for GET /entries/{entry_id}/edits:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit History: Goodbye - Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .edit-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .edit-item {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .edit-meta {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        .edit-summary {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .diff {
+            font-family: monospace;
+            white-space: pre;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .diff-added {
+            background-color: #e6ffed;
+            color: #22863a;
+        }
+        .diff-removed {
+            background-color: #ffeef0;
+            color: #cb2431;
+        }
+    </style>
+</head>
+<body>
+    <a href="/entries/a1ed8722-3dcb-4405-b920-272926d5bb0f" class="back-link">← Back to Entry</a>
+    
+    <h1>Edit History: Goodbye</h1>
+    
+    
+        <p>No edit history available for this entry.</p>
+    
+    
+    <script>
+        // Highlight diff lines
+        document.addEventListener('DOMContentLoaded', function() {
+            const diffElements = document.querySelectorAll('.diff code');
+            
+            diffElements.forEach(function(element) {
+                const content = element.innerHTML;
+                const lines = content.split('<br>');
+                
+                const highlightedLines = lines.map(function(line) {
+                    if (line.startsWith('+')) {
+                        return '<span class="diff-added">' + line + '</span>';
+                    } else if (line.startsWith('-')) {
+                        return '<span class="diff-removed">' + line + '</span>';
+                    } else {
+                        return line;
+                    }
+                });
+                
+                element.innerHTML = highlightedLines.join('<br>');
+            });
+        });
+    </script>
+</body>
+</html>
+2025-05-01 04:55:59,750 - eb95f43f8fb1538f760d5b126b915ee986e420631ae44656a0ce96c897658452 - INFO - got response for GET /entries/{entry_id}:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Goodbye - Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .entry-meta {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        .entry-content {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .contributors {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .edit-history {
+            margin-top: 10px;
+        }
+        .edit-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .edit-link:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #editForm {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/entries" class="back-link">← Back to Entries</a>
+    
+    <h1>Goodbye</h1>
+    
+    <div class="entry-meta">
+        Created by Bob on May 1, 2025, 8:55 a.m.
+        <br>
+        Last modified by Bob on May 1, 2025, 8:55 a.m.
+    </div>
+    
+    <div class="entry-content">
+        <p>World</p>
+    </div>
+    
+    <div class="contributors">
+        <strong>Contributors:</strong> Bob
+    </div>
+    
+    <div class="edit-history">
+        <a href="/entries/a1ed8722-3dcb-4405-b920-272926d5bb0f/edits" class="edit-link">View Edit History</a>
+    </div>
+    
+    <button id="showEditFormBtn">Edit Entry</button>
+    
+    <div id="editForm">
+        <h2>Edit Entry</h2>
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="10" required>World</textarea>
+        </div>
+        <div class="form-group">
+            <label for="modifiedBy">Your Name:</label>
+            <input type="text" id="modifiedBy" name="modifiedBy" required>
+        </div>
+        <div class="form-group">
+            <label for="summary">Edit Summary:</label>
+            <input type="text" id="summary" name="summary" placeholder="Brief description of changes">
+        </div>
+        <button id="submitEditBtn">Submit Changes</button>
+    </div>
+
+    <script>
+        document.getElementById('showEditFormBtn').addEventListener('click', function() {
+            document.getElementById('editForm').style.display = 'block';
+            this.style.display = 'none';
+        });
+
+        document.getElementById('submitEditBtn').addEventListener('click', function() {
+            const content = document.getElementById('content').value;
+            const modifiedBy = document.getElementById('modifiedBy').value;
+            const summary = document.getElementById('summary').value;
+            
+            if (!content || !modifiedBy) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            fetch('/entries/a1ed8722-3dcb-4405-b920-272926d5bb0f', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify({
+                    content: content,
+                    modifiedBy: modifiedBy,
+                    summary: summary
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                window.location.reload();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was a problem updating the entry');
+            });
+        });
+
+        // Function to get CSRF token from cookies
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    </script>
+</body>
+</html>
