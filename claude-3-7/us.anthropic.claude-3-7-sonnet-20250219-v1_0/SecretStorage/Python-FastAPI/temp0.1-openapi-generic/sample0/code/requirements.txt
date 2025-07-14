@@ -6,4 +6,5 @@ email_validator==2.2.0
 python-jose==3.3.0
 passlib==1.7.4
 pyjwt==2.10.0
-requests==2.31.0
+requests==2.32.4
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
